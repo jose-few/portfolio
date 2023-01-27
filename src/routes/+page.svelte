@@ -1,2 +1,2 @@
 <h1>Home Page</h1>
-<p>This is the home page test</p>
+<p>Welcome to my portfolio! Check out some of the work I've done!</p>
