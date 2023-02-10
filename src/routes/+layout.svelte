@@ -46,9 +46,14 @@
         background-color: #6824b9;
     }
     :global(h1) {
-       color: aliceblue;
-       text-align: center;
-       font-size:4rem;
+        color: aliceblue;
+        text-align: center;
+        font-size:4rem;
+    }
+    :global(h2) {
+        color: aliceblue;
+        text-align: center;
+        font-size: 3rem;
     }
     :global(.svgCont) {
         overflow-x: hidden;
@@ -65,8 +70,14 @@
         margin: 0;
     }
     .navholder {
+        height: 200px;
         width: 100%;
         text-align: center;
+        background-image: url("../svg/navbar_1.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #001220;
     }
     .navbar {
         display: inline-block;
@@ -74,7 +85,6 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #001220;
     }
     li {
         float: left;
@@ -85,6 +95,11 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        border-radius: 25px;
+    }
+    li a:hover {
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
     }
 </style>
