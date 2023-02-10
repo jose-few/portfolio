@@ -3,17 +3,39 @@
         Welcome.
     </h1>
     <p>
-        My name is Joe, I am a developer.
+        This is my website.
     </p>
     <p>
-        Keep scrolling to see some of my works.
+        
     </p>
 </div>
 
-<div class="svgCont">
-    <img src="src\svg\waves_1.svg" alt="">
+<div class="svgCont svg1"></div>
+
+<div class="spacer">
+    <p>
+        This is some text.
+    </p>
+    <p>
+        This is some more text.
+    </p>
+    <p>
+        Bonus text!
+    </p>
 </div>
 
-<div class="footer">
-    <p class="footText">Joseph Few</p>
-</div>
+<div class="svgCont svg2"></div>
+
+<div class="svgCont svg3"></div>
+
+<style>
+    .svg1 {
+        background-image: url("src/svg/waves_1.svg");
+    }
+    .svg2 {
+        background-image: url("src/svg/reverse_waves_1.svg");
+    }
+    .svg3 {
+        background-image: url("src/svg/waves_5.svg");
+    }
+</style>

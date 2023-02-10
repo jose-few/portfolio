@@ -4,10 +4,10 @@
     </h1>
 </div>
 
-<div class="svgCont">
-    <img src="src\svg\waves_4.svg" alt="">
-</div>
+<div class="svgCont svg1"></div>
 
-<div class="footer">
-    <p class="footText">Joseph Few</p>
-</div>
+<style>
+    .svg1 {
+        background-image: url("src/svg/waves_4.svg");
+    }
+</style>

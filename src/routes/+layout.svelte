@@ -11,6 +11,12 @@
 
 <link href='https://fonts.googleapis.com/css?family=Averia Sans Libre' rel='stylesheet'>
 
+<slot></slot>
+
+<div class="footer">
+    <p class="footText">Joseph Few</p>
+</div>
+
 <style>
     :global(body) {
         background-color: #001220;
@@ -22,11 +28,8 @@
         margin: 0;
         padding: 0;
     }
-    :global(img) {
-        vertical-align: bottom;
-        width: 100%;
-    }
     :global(.footer) {
+        height: 200px;
         color: aliceblue;
         font-size: 1.5rem;
         text-align: center;
@@ -34,6 +37,13 @@
     }
     :global(.footText) {
         margin: 0;
+    }
+    :global(.spacer) {
+        height: 150px;
+        color: aliceblue;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: #6824b9;
     }
     :global(h1) {
        color: aliceblue;
@@ -43,11 +53,16 @@
     :global(.svgCont) {
         overflow-x: hidden;
         width: 100%;
+        height: 1080px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     :global(p) {
         color: aliceblue;
         text-align: center;
         font-size: 1.5rem;
+        margin: 0;
     }
     .navholder {
         width: 100%;
@@ -73,5 +88,3 @@
         font-size: 1.5rem;
     }
 </style>
-
-<slot></slot>
