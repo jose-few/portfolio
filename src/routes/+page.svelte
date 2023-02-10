@@ -6,7 +6,7 @@
         This is my website.
     </p>
     <p>
-        
+        This site is still under construction!
     </p>
 </div>
 
@@ -20,7 +20,7 @@
         This is some more text.
     </p>
     <p>
-        Bonus text!
+        I will probably put my projects here.
     </p>
 </div>
 

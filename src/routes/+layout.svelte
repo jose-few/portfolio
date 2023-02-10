@@ -14,7 +14,7 @@
 <slot></slot>
 
 <div class="footer">
-    <p class="footText">Joseph Few</p>
+    <p class="footText">I will stick some links here.</p>
 </div>
 
 <style>
