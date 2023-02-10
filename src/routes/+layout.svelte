@@ -22,6 +22,33 @@
         margin: 0;
         padding: 0;
     }
+    :global(img) {
+        vertical-align: bottom;
+        width: 100%;
+    }
+    :global(.footer) {
+        color: aliceblue;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: #6824b9;
+    }
+    :global(.footText) {
+        margin: 0;
+    }
+    :global(h1) {
+       color: aliceblue;
+       text-align: center;
+       font-size:4rem;
+    }
+    :global(.svgCont) {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    :global(p) {
+        color: aliceblue;
+        text-align: center;
+        font-size: 1.5rem;
+    }
     .navholder {
         width: 100%;
         text-align: center;

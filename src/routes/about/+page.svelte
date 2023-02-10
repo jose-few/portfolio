@@ -8,17 +8,6 @@
     <img src="src\svg\waves_4.svg" alt="">
 </div>
 
-<style>
-    h1 {
-       color: aliceblue;
-       text-align: center;
-       font-size:4rem;
-    }
-    .svgCont {
-        overflow-x: hidden;
-        width: 100%;
-    }
-    .svgCont img {
-        display: block;
-    }
-</style>
+<div class="footer">
+    <p class="footText">Joseph Few</p>
+</div>
