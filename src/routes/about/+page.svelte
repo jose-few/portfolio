@@ -21,12 +21,12 @@
 
 <style>
     .svg1 {
-        background-image: url("././svg/waves_4.svg");
+        background-image: url("../../svg/waves_4.svg");
     }
     .svg2 {
-        background-image: url("././svg/reverse_waves_2.svg");
+        background-image: url("../../svg/reverse_waves_2.svg");
     }
     .svg3 {
-        background-image: url("././svg/waves_6.svg");
+        background-image: url("../../svg/waves_6.svg");
     }
 </style>
