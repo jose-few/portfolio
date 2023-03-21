@@ -5,7 +5,7 @@
 
 <h1>Oh no!</h1>
 <h2>{$page.status}: {$page.error.message}</h2>
-<p>That page you're trying to access couldn't be found, sorry!</p>
+<p>That page you're trying to access couldn't be found, or I haven't finished it yet, sorry!</p>
 
 <div class="svgCont svg1"></div>
 
