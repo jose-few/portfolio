@@ -72,8 +72,7 @@
     .navholder {
         height: 200px;
         width: 100%;
-        margin: 0 auto;
-        padding: 50px 0;
+        margin: 0;
         text-align: center;
         background-image: url("../svg/navbar_1.svg");
         background-position: center;
@@ -82,20 +81,23 @@
         background-color: #001220;
     }
     .navbar {
+        padding: 0;
         list-style: none;
         list-style-type: none;
         text-align: center;
         overflow: hidden;
     }
-    .navbar:hover li {
+    nav:hover li {
         filter: blur(2px);
         transition: all 100ms ease-in-out;
+        font-size: 1.75rem;
     }
     li {
         display: inline-block;
     }
-    li:hover {
+    nav li a:hover {
         opacity: 1;
+        font-size: 2.25rem;
         filter: blur(0px);
         transition: all 100ms ease-in-out;
     }
