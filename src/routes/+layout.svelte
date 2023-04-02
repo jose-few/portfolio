@@ -91,6 +91,8 @@
         filter: blur(2px);
         -webkit-filter: blur(2px);
         transition: all 100ms ease-in-out;
+    }
+    ul:hover li a {
         font-size: 1.75rem;
     }
     li {
@@ -110,6 +112,8 @@
         filter: blur(0);
         -webkit-filter: blur(0);
         transition: all 100ms ease-in-out;
+    }
+    ul li a:hover{
         font-size: 2.25rem;
     }
 </style>
