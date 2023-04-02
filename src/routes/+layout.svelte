@@ -70,7 +70,8 @@
         margin: 0;
     }
     :global(.show) {
-        opacity: 1;
+        opacity: 1 !important;
+        transition: all 1s;
     }
     :global(.hide) {
         opacity: 0;
