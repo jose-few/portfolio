@@ -87,8 +87,17 @@
         text-align: center;
         overflow: hidden;
     }
+    .navbar:hover li {
+        filter: blur(2px);
+        transition: all 100ms ease-in-out;
+    }
     li {
         display: inline-block;
+    }
+    li:hover {
+        opacity: 1;
+        filter: blur(0px);
+        transition: all 100ms ease-in-out;
     }
     li a {
         display: block;
@@ -99,64 +108,5 @@
         font-size: 2rem;
         border-radius: 25px;
         opacity: 0.8;
-    }
-    li a,
-    li a:after,
-    li a:before {
-        transition: all .5s;
-    }
-    li a:hover {
-        color: #555;
-        opacity: 100%;
-    }
-    nav.fill ul li a {
-        position: relative;
-    }
-    nav.fill ul li a:after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 0%;
-        content: '.';
-        color: transparent;
-        backdrop-filter: blur(5px);
-        height: 1px;
-    }
-    nav.fill ul li a {
-        transition: all 2s;
-    }
-    nav.fill ul li a:after {
-        text-align: left;
-        content: '.';
-        margin: 0;
-        opacity: 0;
-    }
-    nav.fill ul li a:hover {
-        color: #fff;
-        z-index: 1;
-    }
-    nav.fill ul li a:hover:after {
-        z-index: -10;
-        animation: fill 1s forwards;
-        -webkit-animation: fill 1s forwards;
-        -moz-animation: fill 1s forwards;
-        opacity: 1;
-    }
-    @-webkit-keyframes fill {
-        0% {
-            width: 0%;
-            height: 1px;
-        }
-        50% {
-            width: 100%;
-            height: 1px;
-        }
-        100% {
-            width: 100%;
-            height: 100%;
-            backdrop-filter: blur(10px);
-        }
     }
 </style>
