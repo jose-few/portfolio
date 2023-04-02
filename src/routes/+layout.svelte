@@ -69,6 +69,13 @@
         font-size: 1.5rem;
         margin: 0;
     }
+    :global(.show) {
+        opacity: 1;
+    }
+    :global(.hide) {
+        opacity: 0;
+        transition: all 1s;
+    }
     .navholder {
         height: 200px;
         width: 100%;

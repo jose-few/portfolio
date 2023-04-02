@@ -1,7 +1,21 @@
+<script>
+    import IntersectionObserver from "svelte-intersection-observer";
+
+    let element;
+</script>
+
 <div>
-    <h1>
-        Welcome.
-    </h1>
+    <IntersectionObserver
+     {element}
+     on:observe="{(e) => {
+        console.log(e.detail);
+        console.log(e.detail.isIntersecting);
+        }}"
+    >
+        <h1 bind:this={element}>
+            Welcome.
+        </h1>
+    </IntersectionObserver>
     <p>
         This is my website.
     </p>
