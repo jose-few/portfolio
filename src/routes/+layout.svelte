@@ -104,7 +104,7 @@
         font-size: 2rem;
         border-radius: 25px;
     }
-    li:hover {
+    ul li:hover {
         opacity: 1;
         filter: blur(0);
         -webkit-filter: blur(0);
