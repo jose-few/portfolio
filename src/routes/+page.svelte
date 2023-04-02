@@ -16,7 +16,7 @@
         console.log(e.detail.isIntersecting);
         }}"
     >
-        <h1 class="hide" bind:this={element}>
+        <h1 class="hide" bind:this="{element}">
             Welcome.
         </h1>
     </IntersectionObserver>
@@ -31,7 +31,7 @@
         console.log(e.detail.isIntersecting);
         }}"
     >
-    <p class="hide" bind:this={element}>
+    <p class="hide" bind:this="{element}">
         This is my website.
     </p>
     </IntersectionObserver>
@@ -46,7 +46,7 @@
         console.log(e.detail.isIntersecting);
         }}"
     >
-    <p class="hide" bind:this={element}>
+    <p class="hide" bind:this="{element}">
         This site is still under construction!
     </p>
     </IntersectionObserver>
