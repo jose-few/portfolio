@@ -121,7 +121,7 @@
         width: 0%;
         content: '.';
         color: transparent;
-        background: #aaa;
+        backdrop-filter: blur(5px);
         height: 1px;
     }
     nav.fill ul li a {
@@ -156,7 +156,7 @@
         100% {
             width: 100%;
             height: 100%;
-            background: #333;
+            backdrop-filter: blur(10px);
         }
     }
 </style>
