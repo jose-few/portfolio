@@ -1,10 +1,10 @@
-<nav class="navholder fill">
+<nav class="navholder">
     <ul class="navbar">
         <li>
-            <a class="navlink" href="/">Home</a>
+            <a href="/">Home</a>
         </li>
         <li>
-            <a class="navlink" href="/about">About</a>
+            <a href="/about">About</a>
         </li>
     </ul>
 </nav>
@@ -72,7 +72,6 @@
     .navholder {
         height: 200px;
         width: 100%;
-        margin: 0;
         text-align: center;
         background-image: url("../svg/navbar_1.svg");
         background-position: center;
@@ -81,34 +80,30 @@
         background-color: #001220;
     }
     .navbar {
-        padding: 0;
-        list-style: none;
+        display: inline-block;
         list-style-type: none;
-        text-align: center;
+        margin: 0;
+        padding: 0;
         overflow: hidden;
     }
-    nav:hover li {
+    .navbar:hover li {
         filter: blur(2px);
         transition: all 100ms ease-in-out;
-        font-size: 1.75rem;
     }
     li {
-        display: inline-block;
-    }
-    nav li a:hover {
-        opacity: 1;
-        font-size: 2.25rem;
-        filter: blur(0px);
-        transition: all 100ms ease-in-out;
+        float: left;
     }
     li a {
         display: block;
         color: aliceblue;
-        margin: 0 10px;
+        text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 2rem;
         border-radius: 25px;
-        opacity: 0.8;
+    }
+    li a:hover {
+        filter: blur(0px);
+        transition: all 100ms ease-in-out;
     }
 </style>
