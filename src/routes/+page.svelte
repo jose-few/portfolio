@@ -1,27 +1,30 @@
-<script>
-    function show(e) {
-        const observer = new IntersectionObserver(entries => {
-            if(entries[0].isIntersecting) {
-                let elem = entries[0].target;
-                elem.classList.add('show');
-            } else {
-                let elem = entries[0].target;
-                elem.classList.remove('show');
-            }
-        }, options);
+<script lang="ts">
+    import { inview } from 'svelte-inview';
+    import { ObserverEventDetails, Options } from 'svelte-inview';
 
-        observer.observe(e);
-    }
+    let isInView: boolean;
+    const options: Options = {
+        rootMargin: '-50px',
+        unobserveOnEnter: true,
+    };
+
+    const show = ({detail}: CustomEvent<ObserverEventDetails>) => {
+        (isInView = detail.inView);
+    };
 </script>
 
-<div>
-    <h1 use:show>
+<div use:inview={options} on:inview_change={show}>
+    <h1 class="hide" class:show={isInView}>
         Welcome.
     </h1>
-    <p>
+</div>
+<div use:inview={options} on:inview_change={show}>
+    <p class="hide" class:show={isInView}>
         This is my website.
     </p>
-    <p>
+</div>
+<div use:inview={options} on:inview_change={show}>
+    <p class="hide" class:show={isInView}>
         This site is still under construction!
     </p>
 </div>
