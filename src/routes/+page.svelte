@@ -9,21 +9,25 @@
     };
 
     const show = ({detail}: CustomEvent<ObserverEventDetails>) => {
-        (isInView = detail.inView);
+        (isInView = true);
+    };
+
+    const hide = ({detail}: CustomEvent<ObserverEventDetails>) => {
+        (isInView = false);
     };
 </script>
 
-<div use:inview={options} on:inview_change={show}>
+<div use:inview={options} on:inview_enter={show} on:inview_leave={hide}>
     <h1 class="hide" class:show={isInView}>
         Welcome.
     </h1>
 </div>
-<div use:inview={options} on:inview_change={show}>
+<div use:inview={options} on:inview_enter={show} on:inview_leave={hide}>
     <p class="hide" class:show={isInView}>
         This is my website.
     </p>
 </div>
-<div use:inview={options} on:inview_change={show}>
+<div use:inview={options} on:inview_enter={show} on:inview_leave={hide}>
     <p class="hide" class:show={isInView}>
         This site is still under construction!
     </p>
