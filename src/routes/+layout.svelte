@@ -91,6 +91,7 @@
         filter: blur(2px);
         -webkit-filter: blur(2px);
         transition: all 100ms ease-in-out;
+        font-size: 1.75rem;
     }
     li {
         float: left;
@@ -109,5 +110,6 @@
         filter: blur(0);
         -webkit-filter: blur(0);
         transition: all 100ms ease-in-out;
+        font-size: 2.25rem;
     }
 </style>
