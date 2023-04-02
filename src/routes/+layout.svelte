@@ -1,10 +1,10 @@
 <nav class="navholder">
     <ul class="navbar">
         <li>
-            <a href="/">Home</a>
+            <a class="navlink" href="/">Home</a>
         </li>
         <li>
-            <a href="/about">About</a>
+            <a class="navlink" href="/about">About</a>
         </li>
     </ul>
 </nav>
@@ -97,8 +97,20 @@
         text-decoration: none;
         font-size: 2rem;
         border-radius: 25px;
+        opacity: 0.8;
     }
-    li a:hover {
-        
+    .navlink:hover {
+        opacity: 1;
+    }
+    .navlink::before {
+        transition: 300ms;
+        height: 5px;
+        content: "";
+        position: absolute;
+        width: 0%;
+        bottom: 10px;
+    }
+    .navlink:hover::before {
+        width: 100%;
     }
 </style>
