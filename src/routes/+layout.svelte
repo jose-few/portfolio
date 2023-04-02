@@ -1,4 +1,4 @@
-<nav class="navholder">
+<nav class="navholder fill">
     <ul class="navbar">
         <li>
             <a class="navlink" href="/">Home</a>
@@ -72,6 +72,8 @@
     .navholder {
         height: 200px;
         width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
         text-align: center;
         background-image: url("../svg/navbar_1.svg");
         background-position: center;
@@ -80,37 +82,81 @@
         background-color: #001220;
     }
     .navbar {
-        display: inline-block;
+        list-style: none;
         list-style-type: none;
-        margin: 0;
-        padding: 0;
+        text-align: center;
         overflow: hidden;
     }
     li {
-        float: left;
-        position: relative;
+        display: inline-block;
     }
     li a {
         display: block;
         color: aliceblue;
-        text-align: center;
+        margin: 0 10px;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 2rem;
         border-radius: 25px;
         opacity: 0.8;
     }
-    li a::after {
-        content: "";
-        position: absolute;
-        width: 0%;
-        height: 1px;
-        transition: all 0.3s ease;
-        bottom: 25%;
+    li a,
+    li a:after,
+    li a:before {
+        transition: all .5s;
     }
-    li a:hover::after {
-        width: 100%;
+    li a:hover {
+        color: #555;
+        opacity: 100%;
+    }
+    nav.fill ul li a {
+        position: relative;
+    }
+    nav.fill ul li a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: #aaa;
         height: 1px;
-        background-color: aliceblue;
+    }
+    nav.fill ul li a {
+        transition: all 2s;
+    }
+    nav.fill ul li a:after {
+        text-align: left;
+        content: '.';
+        margin: 0;
+        opacity: 0;
+    }
+    nav.fill ul li a:hover {
+        color: #fff;
+        z-index: 1;
+    }
+    nav.fill ul li a:hover:after {
+        z-index: -10;
+        animation: fill 1s forwards;
+        -webkit-animation: fill 1s forwards;
+        -moz-animation: fill 1s forwards;
+        opacity: 1;
+    }
+    @-webkit-keyframes fill {
+        0% {
+            width: 0%;
+            height: 1px;
+        }
+        50% {
+            width: 100%;
+            height: 1px;
+        }
+        100% {
+            width: 100%;
+            height: 100%;
+            background: #333;
+        }
     }
 </style>
