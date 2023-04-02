@@ -23,6 +23,7 @@
         font-family: 'Averia Sans Libre';
         margin: 0;
         padding: 0;
+        overflow: overlay;
     }
     :global(html) {
         margin: 0;
@@ -76,6 +77,25 @@
     :global(.hide) {
         opacity: 0;
         transition: all 2s;
+    }
+    :global(::-webkit-scrollbar-track)
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: transparent;
+    }
+
+    :global(::-webkit-scrollbar)
+    {
+        width: 12px;
+        background-color: transparent;
+    }
+
+    :global(::-webkit-scrollbar-thumb)
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #555;
     }
     .navholder {
         height: 200px;
