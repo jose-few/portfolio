@@ -89,6 +89,7 @@
     ul:hover li {
         opacity: 0.9;
         filter: blur(2px);
+        -webkit-filter: blur(2px);
         transition: all 100ms ease-in-out;
     }
     li {
@@ -105,7 +106,8 @@
     }
     li:hover {
         opacity: 1;
-        filter: blur(0px);
+        filter: blur(0);
+        -webkit-filter: blur(0);
         transition: all 100ms ease-in-out;
     }
 </style>
