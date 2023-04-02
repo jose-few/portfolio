@@ -99,7 +99,6 @@
         border-radius: 25px;
     }
     li a:hover {
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+        
     }
 </style>
