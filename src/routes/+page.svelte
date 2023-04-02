@@ -1,6 +1,6 @@
 <script lang="ts">
     import { inview } from 'svelte-inview';
-    import { ObserverEventDetails, Options } from 'svelte-inview';
+    import type { ObserverEventDetails, Options } from 'svelte-inview';
 
     let isInView: boolean;
     const options: Options = {
