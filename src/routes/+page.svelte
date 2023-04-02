@@ -20,12 +20,36 @@
             Welcome.
         </h1>
     </IntersectionObserver>
-    <p>
+    <IntersectionObserver
+     {element}
+     on:observe="{(e) => {
+        if (e.detail.isIntersecting) {
+            element.classList.add('show');
+        } else {
+            element.classList.remove('show');
+        }
+        console.log(e.detail.isIntersecting);
+        }}"
+    >
+    <p class="hide" bind:this={element}>
         This is my website.
     </p>
-    <p>
+    </IntersectionObserver>
+    <IntersectionObserver
+     {element}
+     on:observe="{(e) => {
+        if (e.detail.isIntersecting) {
+            element.classList.add('show');
+        } else {
+            element.classList.remove('show');
+        }
+        console.log(e.detail.isIntersecting);
+        }}"
+    >
+    <p class="hide" bind:this={element}>
         This site is still under construction!
     </p>
+    </IntersectionObserver>
 </div>
 
 <div class="svgCont svg1"></div>
