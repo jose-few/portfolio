@@ -4,7 +4,7 @@
 
     let isInView: boolean;
     const options: Options = {
-        rootMargin: '-50px',
+        rootMargin: '-200px',
         unobserveOnEnter: false,
     };
 

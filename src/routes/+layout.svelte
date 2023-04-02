@@ -71,11 +71,11 @@
     }
     :global(.show) {
         opacity: 1 !important;
-        transition: all 1s;
+        transition: all 2s;
     }
     :global(.hide) {
         opacity: 0;
-        transition: all 1s;
+        transition: all 2s;
     }
     .navholder {
         height: 200px;
