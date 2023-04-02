@@ -1,55 +1,13 @@
-<script>
-    import IntersectionObserver from "svelte-intersection-observer";
-
-    let element;
-</script>
-
 <div>
-    <IntersectionObserver
-     {element}
-     on:observe="{(e) => {
-        if (e.detail.isIntersecting) {
-            element.classList.add('show');
-        } else {
-            element.classList.remove('show');
-        }
-        console.log(e.detail.isIntersecting);
-        }}"
-    >
-        <h1 class="hide" bind:this="{element}">
-            Welcome.
-        </h1>
-    </IntersectionObserver>
-    <IntersectionObserver
-     {element}
-     on:observe="{(e) => {
-        if (e.detail.isIntersecting) {
-            element.classList.add('show');
-        } else {
-            element.classList.remove('show');
-        }
-        console.log(e.detail.isIntersecting);
-        }}"
-    >
-    <p class="hide" bind:this="{element}">
+    <h1 use:show>
+        Welcome.
+    </h1>
+    <p>
         This is my website.
     </p>
-    </IntersectionObserver>
-    <IntersectionObserver
-     {element}
-     on:observe="{(e) => {
-        if (e.detail.isIntersecting) {
-            element.classList.add('show');
-        } else {
-            element.classList.remove('show');
-        }
-        console.log(e.detail.isIntersecting);
-        }}"
-    >
-    <p class="hide" bind:this="{element}">
+    <p>
         This site is still under construction!
     </p>
-    </IntersectionObserver>
 </div>
 
 <div class="svgCont svg1"></div>

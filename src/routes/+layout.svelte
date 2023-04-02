@@ -1,3 +1,19 @@
+<script>
+    function show(e) {
+        const observer = new IntersectionObserver(entries => {
+            if(entries[0].isIntersecting) {
+                let elem = entries[0].target;
+                elem.classList.add('show');
+            } else {
+                let elem = entries[0].target;
+                elem.classList.remove('show');
+            }
+        }, options);
+
+        observer.observe(e);
+    }
+</script>
+
 <nav class="navholder">
     <ul class="navbar">
         <li>
