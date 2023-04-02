@@ -86,7 +86,8 @@
         padding: 0;
         overflow: hidden;
     }
-    .navbar:hover li {
+    ul:hover li {
+        opacity: 0.9;
         filter: blur(2px);
         transition: all 100ms ease-in-out;
     }
@@ -102,7 +103,8 @@
         font-size: 2rem;
         border-radius: 25px;
     }
-    li a:hover {
+    li:hover {
+        opacity: 1;
         filter: blur(0px);
         transition: all 100ms ease-in-out;
     }
