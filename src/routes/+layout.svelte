@@ -88,6 +88,7 @@
     }
     li {
         float: left;
+        position: relative;
     }
     li a {
         display: block;
@@ -99,18 +100,17 @@
         border-radius: 25px;
         opacity: 0.8;
     }
-    .navlink:hover {
-        opacity: 1;
-    }
-    .navlink::before {
-        transition: 300ms;
-        height: 5px;
+    li a::after {
         content: "";
         position: absolute;
         width: 0%;
-        bottom: 10px;
+        height: 1px;
+        transition: all 0.3s ease;
+        bottom: 25%;
     }
-    .navlink:hover::before {
+    li a:hover::after {
         width: 100%;
+        height: 1px;
+        background-color: aliceblue;
     }
 </style>
