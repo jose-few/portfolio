@@ -8,11 +8,15 @@
     <IntersectionObserver
      {element}
      on:observe="{(e) => {
-        console.log(e.detail);
+        if (e.detail.isIntersecting) {
+            element.classList.add('show');
+        } else {
+            element.classList.remove('show');
+        }
         console.log(e.detail.isIntersecting);
         }}"
     >
-        <h1 bind:this={element}>
+        <h1 class="hide" bind:this={element}>
             Welcome.
         </h1>
     </IntersectionObserver>
