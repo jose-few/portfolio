@@ -73,10 +73,14 @@
     :global(.show) {
         opacity: 1 !important;
         transition: all 2s;
+        filter: blur(0) !important;
+        transform: translateY(0) !important;
     }
     :global(.hide) {
         opacity: 0;
         transition: all 2s;
+        filter: blur(5px);
+        transform: translateY(50px);
     }
     :global(::-webkit-scrollbar-track)
     {
