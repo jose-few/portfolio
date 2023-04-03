@@ -3,7 +3,7 @@
     import type { ObserverEventDetails, Options } from 'svelte-inview';
 
     const options: Options = {
-        root: document.body,
+        root: null,
         rootMargin: '-100px',
         unobserveOnEnter: false,
     };
