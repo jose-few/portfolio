@@ -1,18 +1,45 @@
+<script lang="ts">
+    import { inview } from 'svelte-inview';
+    import type { ObserverEventDetails, Options } from 'svelte-inview';
+
+    const options: Options = {
+        rootMargin: '-200px',
+        unobserveOnEnter: false,
+    };
+
+    const show = ({detail}: CustomEvent<ObserverEventDetails>) => {
+        let isInView: boolean;
+        (isInView = detail.inView);
+        //console.log(detail.node);
+        if (isInView) {
+            detail.node.classList.add('show');
+        } else {
+            detail.node.classList.remove('show');
+        }
+    };
+</script>
+
 <div>
-    <h1>
-        About me.
-    </h1>
-    <p>
-        This will be my about page.
-    </p>
+    <div class="hide" use:inview={options} on:inview_change={show}>
+        <h1>
+            About me.
+        </h1>
+    </div>
+    <div class="hide" use:inview={options} on:inview_change={show}>
+        <p>
+            This will be my about page.
+        </p>
+    </div>
 </div>
 
 <div class="svgCont svg1"></div>
 
 <div class="spacer">
-    <p>
-        This is where I will write about myself.
-    </p>
+    <div class="hide" use:inview={options} on:inview_change={show}>
+        <p>
+            This is where I will write about myself.
+        </p>
+    </div>
 </div>
 
 <div class="svgCont svg2"></div>
