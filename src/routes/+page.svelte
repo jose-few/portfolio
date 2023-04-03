@@ -3,8 +3,9 @@
     import type { ObserverEventDetails, Options } from 'svelte-inview';
 
     const options: Options = {
-        rootMargin: '-200px',
+        rootMargin: '-100px',
         unobserveOnEnter: false,
+        threshold: 0.9
     };
 
     const show = ({detail}: CustomEvent<ObserverEventDetails>) => {
