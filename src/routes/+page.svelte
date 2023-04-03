@@ -11,6 +11,7 @@
     const show = ({detail}: CustomEvent<ObserverEventDetails>) => {
         (isInView = detail.inView);
         console.log(isInView);
+        console.log(detail.node);
     };
 </script>
 
