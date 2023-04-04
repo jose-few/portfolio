@@ -59,7 +59,7 @@
     :global(.svgCont) {
         overflow-x: hidden;
         width: 100%;
-        aspect-ratio: 1920/1080;
+        height: 1080px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
