@@ -13,8 +13,10 @@
 
 <slot></slot>
 
+<div class="svgCont svg"></div>
+
 <div class="footer">
-    <p class="footText">I will stick some links here.</p>
+    <p class="footText">This will be the footer. I will stick some links here.</p>
 </div>
 
 <style>
@@ -44,7 +46,6 @@
         color: aliceblue;
         font-size: 1.5rem;
         text-align: center;
-        background-color: #6824b9;
     }
     :global(h1) {
         color: aliceblue;
@@ -102,10 +103,10 @@
         background-color: #555;
     }
     .navholder {
-        height: 229px;
+        height: 400px;
         width: 100%;
         text-align: center;
-        background-image: url("../svg/navbar_1.svg");
+        background-image: url("../svg/animate_ud_2.svg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -147,5 +148,8 @@
     }
     ul li a:hover{
         font-size: 2.25rem;
+    }
+    .svg {
+        background-image: url("../svg/animate_1.svg");
     }
 </style>

@@ -20,41 +20,21 @@
     };
 </script>
 
-<div>
-    <div class="hide" use:inview={options} on:inview_change={show}>
-        <h1>
-            About me.
-        </h1>
-    </div>
-    <div class="hide" use:inview={options} on:inview_change={show}>
-        <p>
-            This will be my about page.
-        </p>
-    </div>
+<div class="hide" use:inview={options} on:inview_change={show}>
+    <h1>
+        About me.
+    </h1>
 </div>
-
-<div class="svgCont svg1"></div>
-
-<div class="spacer">
-    <div class="hide" use:inview={options} on:inview_change={show}>
-        <p>
-            This is where I will write about myself.
-        </p>
-    </div>
+<div class="spacer"></div>
+<div class="hide" use:inview={options} on:inview_change={show}>
+    <p>
+        This will be my about page.
+    </p>
 </div>
-
-<div class="svgCont svg2"></div>
-
-<div class="svgCont svg3"></div>
-
-<style>
-    .svg1 {
-        background-image: url("../../svg/animate_1.svg");
-    }
-    .svg2 {
-        background-image: url("../../svg/animate_ud_1.svg");
-    }
-    .svg3 {
-        background-image: url("../../svg/animate_1.svg");
-    }
-</style>
+<div class="spacer"></div>
+<div class="hide" use:inview={options} on:inview_change={show}>
+    <p>
+        This is where I will write about myself.
+    </p>
+</div>
+<div class="spacer"></div>
