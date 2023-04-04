@@ -62,12 +62,12 @@
 
 <style>
     .svg1 {
-        background-image: url("../svg/waves_1.svg");
+        background-image: url("../svg/animate_1.svg");
     }
     .svg2 {
-        background-image: url("../svg/reverse_waves_1.svg");
+        background-image: url("../svg/animate_ud_1.svg");
     }
     .svg3 {
-        background-image: url("../svg/waves_5.svg");
+        background-image: url("../svg/animate_1.svg");
     }
 </style>

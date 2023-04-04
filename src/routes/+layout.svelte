@@ -59,7 +59,7 @@
     :global(.svgCont) {
         overflow-x: hidden;
         width: 100%;
-        height: 1080px;
+        aspect-ratio: 1920/1080;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -102,7 +102,7 @@
         background-color: #555;
     }
     .navholder {
-        height: 200px;
+        height: 229px;
         width: 100%;
         text-align: center;
         background-image: url("../svg/navbar_1.svg");
