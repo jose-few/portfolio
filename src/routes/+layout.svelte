@@ -6,6 +6,9 @@
         <li>
             <a href="/about">About</a>
         </li>
+        <li>
+            <a href="/contact">Contact Me</a>
+        </li>
     </ul>
 </nav>
 
@@ -57,6 +60,12 @@
         text-align: center;
         font-size: 3rem;
     }
+    :global(h4) {
+        font-size: 1.75rem;
+        margin: 10px;
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
     :global(.svgCont) {
         overflow-x: hidden;
         width: 100%;
@@ -101,6 +110,42 @@
         border-radius: 10px;
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
         background-color: #555;
+    }
+    :global(form)
+    {
+        margin: auto;
+        width: 30%;
+        height: 600px;
+        background-color: aliceblue;
+        border-radius: 25px;
+        color: #001220;
+        text-align: center;
+    }
+    :global(#form_name, #form_email)
+    {
+        width: 70%;
+        font-size: 1.25rem;
+        padding: 10px;
+        margin: 10px;
+        font-family: 'Averia Sans Libre';
+    }
+    :global(#form_msg)
+    {
+        width: 70%;
+        min-width: 70%;
+        max-width: 70%;
+        font-size: 1.25rem;
+        padding: 10px;
+        margin: 10px;
+        font-family: 'Averia Sans Libre';
+    }
+    :global(button)
+    {
+        width: 45%;
+        font-size: 1.25rem;
+        padding: 10px;
+        margin: 10px;
+        font-family: 'Averia Sans Libre';
     }
     .navholder {
         height: 400px;
