@@ -27,7 +27,7 @@
 </div>
 <div class="spacer"></div>
 <div class="hide" use:inview={options} on:inview_change={show}>
-    <form name="contact" method="post" data-netlify="true" action="/contact">
+    <form name="contact" method="POST" data-netlify="true" action="/contact">
         <div>
             <h4>Fill out the form and hit send :)</h4>
         </div>
