@@ -28,6 +28,7 @@
 <div class="spacer"></div>
 <div class="hide" use:inview={options} on:inview_change={show}>
     <form name="contact" method="POST" data-netlify="true" action="/contact">
+        <input type="hidden" name="form-name" value="contact" />
         <div>
             <h4>Fill out the form and hit send :)</h4>
         </div>
