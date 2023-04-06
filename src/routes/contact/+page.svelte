@@ -33,13 +33,13 @@
             <h4>Fill out the form and hit send :)</h4>
         </div>
         <div>
-            <input id="form_name" type="text" placeholder="Your name." required>
+            <input id="form_name" type="text" name="name" placeholder="Your name." required>
         </div>
         <div>
-            <input id="form_email" type="text" placeholder="Your email." required>
+            <input id="form_email" type="email" name="email" placeholder="Your email." required>
         </div>
         <div>
-            <textarea id="form_msg" placeholder="Your query." rows="9" required></textarea>
+            <textarea id="form_msg" placeholder="Your query." name="message" rows="9" required></textarea>
         </div>
         <div>
             <button type="submit">Send</button>
