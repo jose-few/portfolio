@@ -7,7 +7,7 @@
             <a href="/about">About</a>
         </li>
         <li>
-            <a href="/contact">Contact Me</a>
+            <a href="/contact">Contact</a>
         </li>
     </ul>
 </nav>
@@ -23,9 +23,11 @@
 </div>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap');
     :global(body) {
         background-color: #001220;
-        font-family: 'Averia Sans Libre';
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
         margin: 0;
         padding: 0;
         overflow: overlay;
@@ -51,17 +53,21 @@
         text-align: center;
     }
     :global(h1) {
+        font-weight: 900;
         color: aliceblue;
         text-align: center;
         font-size:4rem;
     }
     :global(h2) {
         color: aliceblue;
+        font-weight: 700;
         text-align: center;
         font-size: 3rem;
     }
     :global(h4) {
+        color: aliceblue;
         font-size: 1.75rem;
+        font-weight: 600;
         margin: 10px;
         padding-top: 35px;
         padding-bottom: 10px;
@@ -114,30 +120,32 @@
     :global(form)
     {
         margin: auto;
-        width: 30%;
+        width: 30vw;
+        min-width: 30vw;
         height: 600px;
-        background-color: aliceblue;
-        border-radius: 25px;
+        background-color: #00203a;
+        border-radius: 10px;
         color: #001220;
         text-align: center;
+        box-shadow: 0 0 2px black;
     }
-    :global(#form_name, #form_email)
+    :global(#form_name, #form_email, #form_msg)
     {
         width: 70%;
         font-size: 1.25rem;
         padding: 10px;
         margin: 10px;
-        font-family: 'Averia Sans Libre';
-    }
-    :global(#form_msg)
-    {
-        width: 70%;
+        font-family: 'Roboto', sans-serif;
+        background-color: aliceblue;
+        border: none;
+        border-radius: 5px;
         min-width: 70%;
         max-width: 70%;
-        font-size: 1.25rem;
-        padding: 10px;
-        margin: 10px;
-        font-family: 'Averia Sans Libre';
+    }
+    :global(button:hover)
+    {
+        background-color: #EEFFDB;
+        transition: 500ms all;
     }
     :global(button)
     {
@@ -145,7 +153,11 @@
         font-size: 1.25rem;
         padding: 10px;
         margin: 10px;
-        font-family: 'Averia Sans Libre';
+        font-family: 'Roboto', sans-serif;
+        background-color: aliceblue;
+        border-radius: 5px;
+        border: none;
+        transition: 500ms all;
     }
     .navholder {
         height: 400px;
@@ -161,38 +173,55 @@
         display: inline-block;
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        margin-top: 15px;
+        padding: 5px 10px 5px 10px;
         overflow: hidden;
+        border-radius: 5px;
+        background-color: aliceblue;
+        box-shadow: 0 0 5px #001220;
     }
     ul:hover li {
         opacity: 0.9;
         filter: blur(2px);
         -webkit-filter: blur(2px);
-        transition: all 100ms ease-in-out;
-    }
-    ul:hover li a {
-        font-size: 1.75rem;
-    }
-    li {
-        float: left;
-    }
-    li a {
-        display: block;
-        color: aliceblue;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 2rem;
-        border-radius: 25px;
+        transition: all 0.5s;
     }
     ul li:hover {
         opacity: 1;
         filter: blur(0);
         -webkit-filter: blur(0);
-        transition: all 100ms ease-in-out;
+        transition: all 0.5s;
     }
-    ul li a:hover{
-        font-size: 2.25rem;
+    li {
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    li a {
+        display: inline-block;
+        position: relative;
+        color: #001220;
+        text-align: center;
+        margin: 14px 16px;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    li a:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #001220;
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+    }
+    li a:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
     .svg {
         background-image: url("../svg/animate_1.svg");

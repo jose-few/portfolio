@@ -30,7 +30,7 @@
     <form name="contact" method="POST" data-netlify="true" action="/contact">
         <input type="hidden" name="form-name" value="contact" />
         <div>
-            <h4>Fill out the form and hit send :)</h4>
+            <h4>Fill out the form and hit send.</h4>
         </div>
         <div>
             <input id="form_name" type="text" name="name" placeholder="Your name." required>
