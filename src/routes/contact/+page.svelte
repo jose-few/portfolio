@@ -95,10 +95,13 @@
     @media screen and (max-width: 600px) {
         form {
             min-width: 90vw;
-            min-height: 90svh;
+            min-height: 105svh;
         }
         h1 {
-            font-size: 2.5rem;
+            font-size: 1.75rem;
+        }
+        h4 {
+            font-size: 1.25rem;
         }
         .spacer {
             height: 50px;
@@ -107,7 +110,7 @@
             min-width: 85%;
         }
         button {
-            width: 50%;
+            width: 40%;
         }
     }
 </style>
