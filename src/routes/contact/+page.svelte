@@ -95,7 +95,7 @@
     @media screen and (max-width: 600px) {
         form {
             min-width: 90vw;
-            min-height: 105svh;
+            min-height: 95svh;
         }
         h1 {
             font-size: 1.75rem;
