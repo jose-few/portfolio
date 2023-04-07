@@ -16,8 +16,6 @@
 
 <slot></slot>
 
-<div class="svgCont svg"></div>
-
 <div class="footer">
     <p class="footText">This will be the footer. I will stick some links here.</p>
 </div>
@@ -37,14 +35,23 @@
         padding: 0;
     }
     :global(.footer) {
-        height: 200px;
+        position: relative;
+        min-height: 70vh;
         color: aliceblue;
         font-size: 1.5rem;
         text-align: center;
-        background-color: #6824b9;
+        background-image: url("../svg/animate_1.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #001220;
     }
     :global(.footText) {
+        width: 100%;
+        position: absolute;
         margin: 0;
+        bottom: 5px;
+        text-align: center;
     }
     :global(.spacer) {
         height: 150px;
@@ -179,7 +186,48 @@
         transform: scaleX(1);
         transform-origin: bottom left;
     }
-    .svg {
-        background-image: url("../svg/animate_1.svg");
+    @media screen and (max-width: 600px) {
+        .navbar {
+            margin-top: 0;
+        }
+        ul {
+            display: flex !important;
+            flex-direction: column;
+            max-width: 30vw;
+            text-align: left;
+        }
+        a {
+            font-size: 1.6rem !important;
+        }
+        .footer {
+            max-height: 30svh;
+            background-size: auto;
+        }
+        .footText {
+            font-size: 1.2rem;
+        }
+        :global(.show) {
+            opacity: 1 !important;
+            transition: all 21s;
+            filter: blur(0) !important;
+            transform: translateX(0) !important;
+            transform: translateY(0) !important;
+        }
+        :global(.hide) {
+            opacity: 0;
+            transition: all 1s;
+            filter: blur(5px);
+            transform: translateX(0);
+            transform: translateY(5px);
+        }
+        :global(h1) {
+            font-size: 2.5rem;
+        }
+        :global(p) {
+            font-size: 1.25rem;
+        }
+        :global(.spacer) {
+            height: 50px;
+        }
     }
 </style>

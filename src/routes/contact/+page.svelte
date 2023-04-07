@@ -52,9 +52,9 @@
     }
     form {
         margin: auto;
-        width: 30vw;
-        min-width: 30vw;
-        height: 70svh;
+        width: 45vw;
+        min-width: 40vw;
+        height: 75svh;
         min-height: 70svh;
         background-color: #00203a;
         border-radius: 10px;
@@ -82,7 +82,8 @@
         transition: 500ms all;
     }
     button {
-        width: 45%;
+        width: 50%;
+        min-width: 45%;
         font-size: 1.25rem;
         padding: 10px;
         margin: 10px;
@@ -94,6 +95,7 @@
     }
     @media screen and (max-width: 600px) {
         form {
+            width: 90vw;
             min-width: 90vw;
             min-height: 95svh;
         }
@@ -103,14 +105,12 @@
         h4 {
             font-size: 1.25rem;
         }
-        .spacer {
-            height: 50px;
-        }
         #form_name, #form_email, #form_msg {
             min-width: 85%;
         }
         button {
             width: 40%;
+            min-width: 35%;
         }
     }
 </style>
