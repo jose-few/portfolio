@@ -104,60 +104,16 @@
         border-radius: 10px;
         background-color: transparent;
     }
-
     :global(::-webkit-scrollbar)
     {
         width: 12px;
         background-color: transparent;
     }
-
     :global(::-webkit-scrollbar-thumb)
     {
         border-radius: 10px;
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
         background-color: #555;
-    }
-    :global(form)
-    {
-        margin: auto;
-        width: 30vw;
-        min-width: 30vw;
-        height: 600px;
-        background-color: #00203a;
-        border-radius: 10px;
-        color: #001220;
-        text-align: center;
-        box-shadow: 0 0 2px black;
-    }
-    :global(#form_name, #form_email, #form_msg)
-    {
-        width: 70%;
-        font-size: 1.25rem;
-        padding: 10px;
-        margin: 10px;
-        font-family: 'Roboto', sans-serif;
-        background-color: aliceblue;
-        border: none;
-        border-radius: 5px;
-        min-width: 70%;
-        max-width: 70%;
-    }
-    :global(button:hover)
-    {
-        background-color: #EEFFDB;
-        transition: 500ms all;
-    }
-    :global(button)
-    {
-        width: 45%;
-        font-size: 1.25rem;
-        padding: 10px;
-        margin: 10px;
-        font-family: 'Roboto', sans-serif;
-        background-color: aliceblue;
-        border-radius: 5px;
-        border: none;
-        transition: 500ms all;
     }
     .navholder {
         height: 400px;
@@ -177,8 +133,8 @@
         padding: 5px 10px 5px 10px;
         overflow: hidden;
         border-radius: 5px;
-        background-color: aliceblue;
-        box-shadow: 0 0 5px #001220;
+        background-color: transparent;
+        /* box-shadow: 0 0 5px #001220; */
     }
     ul:hover li {
         opacity: 0.9;
@@ -200,7 +156,7 @@
     li a {
         display: inline-block;
         position: relative;
-        color: #001220;
+        color: aliceblue;
         text-align: center;
         margin: 14px 16px;
         text-decoration: none;
@@ -215,7 +171,7 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #001220;
+        background-color: aliceblue;
         transform-origin: bottom right;
         transition: transform 0.5s ease-out;
     }
