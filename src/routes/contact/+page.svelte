@@ -52,8 +52,8 @@
     }
     form {
         margin: auto;
-        width: 45vw;
-        min-width: 40vw;
+        width: 50svw;
+        min-width: 40svw;
         height: 75svh;
         min-height: 70svh;
         background-color: #00203a;
@@ -94,11 +94,36 @@
         transition: 500ms all;
         color: #001220;
     }
+    @media screen and (max-width: 1000px) {
+        form {
+            height: 100svh;
+            width: 80svw;
+            min-width: 70svw;
+            min-height: 90svh;
+        }
+        h1 {
+            font-size: 2.25rem;
+        }
+        h4 {
+            font-size: 1.5rem;
+        }
+        #form_name, #form_email, #form_msg {
+            min-width: 75%;
+            font-size: 1.1rem;
+        }
+        button {
+            width: 40%;
+            min-width: 35%;
+            color: #001220;
+            font-size: 1.1rem;
+        }
+    }
     @media screen and (max-width: 600px) {
         form {
-            width: 90vw;
-            min-width: 90vw;
-            min-height: 95svh;
+            height: 110svh;
+            width: 90svw;
+            min-width: 90svw;
+            min-height: 100svh;
         }
         h1 {
             font-size: 1.95rem;
@@ -108,11 +133,13 @@
         }
         #form_name, #form_email, #form_msg {
             min-width: 85%;
+            font-size: 1.05rem;
         }
         button {
             width: 40%;
             min-width: 35%;
             color: #001220;
+            font-size: 1.05rem;
         }
     }
 </style>
