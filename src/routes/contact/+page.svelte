@@ -98,7 +98,7 @@
             min-height: 95svh;
         }
         h1 {
-            font-size: 1.75rem;
+            font-size: 1.95rem;
         }
         h4 {
             font-size: 1.25rem;
