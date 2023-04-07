@@ -120,10 +120,10 @@
     }
     @media screen and (max-width: 600px) {
         form {
-            height: 110svh;
+            height: 95svh;
             width: 90svw;
             min-width: 90svw;
-            min-height: 100svh;
+            min-height: 90svh;
         }
         h1 {
             font-size: 1.95rem;
@@ -140,6 +140,30 @@
             min-width: 35%;
             color: #001220;
             font-size: 1.05rem;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        form {
+            height: 105svh;
+            width: 90svw;
+            min-width: 90svw;
+            min-height: 105svh;
+        }
+        h1 {
+            font-size: 1.85rem;
+        }
+        h4 {
+            font-size: 1.15rem;
+        }
+        #form_name, #form_email, #form_msg {
+            min-width: 85%;
+            font-size: 1.03rem;
+        }
+        button {
+            width: 50%;
+            min-width: 45%;
+            color: #001220;
+            font-size: 1.03rem;
         }
     }
 </style>
