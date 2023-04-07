@@ -92,6 +92,7 @@
         border-radius: 5px;
         border: none;
         transition: 500ms all;
+        color: #001220;
     }
     @media screen and (max-width: 600px) {
         form {
@@ -111,6 +112,7 @@
         button {
             width: 40%;
             min-width: 35%;
+            color: #001220;
         }
     }
 </style>
