@@ -88,6 +88,7 @@
         background-repeat: no-repeat;
     }
     :global(p) {
+        width: 95%;
         color: aliceblue;
         text-align: justify;
         font-size: 1.5rem;
