@@ -20,7 +20,7 @@
     };
 </script>
 
-<div class="hide" use:inview={options} on:inview_change={show}>
+<div class="container">
     <h1>
         Welcome
     </h1>
@@ -44,3 +44,30 @@
     </p>
 </div>
 <div class="spacer"></div>
+<style>
+    .container {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+    }
+    h1 {
+        display: inline-block;
+        position: relative;
+    }
+    h1::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: aliceblue;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    h1:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+</style>

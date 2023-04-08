@@ -98,13 +98,13 @@
         opacity: 1 !important;
         transition: all 2s;
         filter: blur(0) !important;
-        transform: translateX(0) !important;
+        transform: translateY(0) !important;
     }
     :global(.hide) {
         opacity: 0;
         transition: all 2s;
         filter: blur(5px);
-        transform: translateX(-50px);
+        transform: translateY(5px);
     }
     :global(::-webkit-scrollbar-track)
     {
@@ -209,17 +209,15 @@
         }
         :global(.show) {
             opacity: 1 !important;
-            transition: all 21s;
+            transition: all 1s;
             filter: blur(0) !important;
-            transform: translateX(0) !important;
             transform: translateY(0) !important;
         }
         :global(.hide) {
             opacity: 0;
             transition: all 1s;
             filter: blur(5px);
-            transform: translateX(0);
-            transform: translateY(5px);
+            transform: translateY(2px);
         }
         :global(h1) {
             font-size: 2.5rem;
