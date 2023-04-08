@@ -22,19 +22,24 @@
 
 <div class="hide" use:inview={options} on:inview_change={show}>
     <h1>
-        About me.
+        About me
     </h1>
 </div>
 <div class="spacer"></div>
 <div class="hide" use:inview={options} on:inview_change={show}>
     <p>
-        This will be my about page.
+        I am a developer from Devon, England. I studied IT at Aberystwyth University, where 
+        I developed a passion for programming. Since graduating, I have been working as a 
+        Junior Developer at Hawksmoor, where I have been developing not just code - but my 
+        skills as well.
     </p>
 </div>
 <div class="spacer"></div>
 <div class="hide" use:inview={options} on:inview_change={show}>
     <p>
-        This is where I will write about myself.
+        My skillset includes JS, PHP, and more! I have hand crafted this portfolio using 
+        the JS framework Svelte. Please contact me if you have any queries or just want 
+        to chat!
     </p>
 </div>
 <div class="spacer"></div>

@@ -22,31 +22,19 @@
 
 <div class="hide" use:inview={options} on:inview_change={show}>
     <h1>
-        Welcome.
+        Welcome
     </h1>
 </div>
 <div class="spacer"></div>
 <div class="hide" use:inview={options} on:inview_change={show}>
     <p>
-        This is my website.
+        My name is Joe
     </p>
 </div>
 <div class="spacer"></div>
 <div class="hide" use:inview={options} on:inview_change={show}>
     <p>
-        This site is still under construction!
-    </p>
-</div>
-<div class="spacer"></div>
-<div class="hide" use:inview={options} on:inview_change={show}>
-    <p>
-        This is some text.
-    </p>
-</div>
-<div class="spacer"></div>
-<div class="hide" use:inview={options} on:inview_change={show}>
-    <p>
-        This is some more text.
+        This is my portfolio
     </p>
 </div>
 <div class="spacer"></div>
