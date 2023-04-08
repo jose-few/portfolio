@@ -7,7 +7,7 @@
         About me
     </h1>
 </div>
-<img src="..\src\img\IMG_5905.JPG" alt="Me!">
+<img src="..\..\img\IMG_5905.JPG" alt="Me!">
 <Typewriter keepCursorOnFinish={true} delay={500} mode={"cascade"} interval={80} showCursorOnDelay={true}>
     <p>
         I am a developer from Devon, England. I studied IT at Aberystwyth University, where 
