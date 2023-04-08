@@ -88,9 +88,9 @@
         background-repeat: no-repeat;
     }
     :global(p) {
-        width: 90%;
+        width: 50%;
         color: aliceblue;
-        text-align: justify;
+        text-align: center;
         font-size: 1.5rem;
         margin: auto;
     }
@@ -226,6 +226,8 @@
         }
         :global(p) {
             font-size: 1.25rem;
+            text-align: justify;
+            width: 90%;
         }
         :global(.spacer) {
             height: 50px;
