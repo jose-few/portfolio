@@ -20,9 +20,7 @@
     <div>
         <textarea id="form_msg" placeholder="Your query." name="message" rows="12" required></textarea>
     </div>
-    <div>
-        <button type="submit">Send</button>
-    </div>
+    <button type="submit">Send</button>
 </form>
 <style>
     .container {
@@ -51,6 +49,7 @@
         transform-origin: bottom left;
     }
     form {
+        position: relative;
         margin: auto;
         width: 50svw;
         min-width: 40svw;
@@ -82,11 +81,13 @@
         transition: 500ms all;
     }
     button {
+        position: relative;
+        bottom: 0;
         width: 50%;
         min-width: 45%;
         font-size: 1.25rem;
         padding: 10px;
-        margin: 10px;
+        margin-top: 5svh;
         font-family: 'Roboto', sans-serif;
         background-color: aliceblue;
         border-radius: 5px;
@@ -96,10 +97,10 @@
     }
     @media screen and (max-width: 1000px) {
         form {
-            height: 100svh;
+            height: 75svh;
             width: 80svw;
             min-width: 70svw;
-            min-height: 90svh;
+            min-height: 75svh;
         }
         h1 {
             font-size: 2.25rem;
@@ -120,10 +121,10 @@
     }
     @media screen and (max-width: 600px) {
         form {
-            height: 95svh;
+            height: 75svh;
             width: 90svw;
             min-width: 90svw;
-            min-height: 90svh;
+            min-height: 75svh;
         }
         h1 {
             font-size: 1.95rem;
@@ -144,10 +145,10 @@
     }
     @media screen and (max-width: 500px) {
         form {
-            height: 105svh;
-            width: 90svw;
-            min-width: 90svw;
-            min-height: 105svh;
+            height: 70svh;
+            width: 95svw;
+            min-width: 95svw;
+            min-height: 70svh;
         }
         h1 {
             font-size: 1.85rem;
@@ -164,6 +165,41 @@
             min-width: 45%;
             color: #001220;
             font-size: 1.03rem;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        form {
+            height: 72svh;
+            width: 95svw;
+            min-width: 95svw;
+            min-height: 72svh;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        form {
+            height: 89svh;
+            width: 95svw;
+            min-width: 95svw;
+            min-height: 89svh;
+        }
+    }
+    @media screen and (max-width: 360px) {
+        form {
+            height: 80svh;
+            width: 95svw;
+            min-width: 95svw;
+            min-height: 80svh;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        form {
+            height: 100svh;
+            width: 95svw;
+            min-width: 95svw;
+            min-height: 100svh;
+        }
+        h1 {
+            font-size: 1.74rem;
         }
     }
 </style>

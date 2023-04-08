@@ -230,4 +230,9 @@
             height: 50px;
         }
     }
+    @media screen and (max-width: 320px) {
+        a {
+            font-size: 1.4rem !important;
+        }
+    }
 </style>
