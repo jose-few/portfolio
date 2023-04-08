@@ -89,7 +89,7 @@
     }
     :global(p) {
         color: aliceblue;
-        text-align: center;
+        text-align: justify;
         font-size: 1.5rem;
         margin: 0;
     }
