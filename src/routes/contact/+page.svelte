@@ -169,10 +169,10 @@
     }
     @media screen and (max-width: 400px) {
         form {
-            height: 72svh;
+            height: 80svh;
             width: 95svw;
             min-width: 95svw;
-            min-height: 72svh;
+            min-height: 80svh;
         }
     }
     @media screen and (max-width: 375px) {
@@ -185,10 +185,10 @@
     }
     @media screen and (max-width: 360px) {
         form {
-            height: 80svh;
+            height: 95svh;
             width: 95svw;
             min-width: 95svw;
-            min-height: 80svh;
+            min-height: 95svh;
         }
     }
     @media screen and (max-width: 320px) {
