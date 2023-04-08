@@ -88,11 +88,11 @@
         background-repeat: no-repeat;
     }
     :global(p) {
-        width: 95%;
+        width: 90%;
         color: aliceblue;
         text-align: justify;
         font-size: 1.5rem;
-        margin: 0;
+        margin: auto;
     }
     :global(.show) {
         opacity: 1 !important;
