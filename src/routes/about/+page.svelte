@@ -1,23 +1,5 @@
 <script lang="ts">
-    import { inview } from 'svelte-inview';
-    import type { ObserverEventDetails, Options } from 'svelte-inview';
-
-    const options: Options = {
-        root: null,
-        rootMargin: '-100px',
-        unobserveOnEnter: false,
-    };
-
-    const show = ({detail}: CustomEvent<ObserverEventDetails>) => {
-        let isInView: boolean;
-        (isInView = detail.inView);
-        //console.log(detail.node);
-        if (isInView) {
-            detail.node.classList.add('show');
-        } else {
-            detail.node.classList.remove('show');
-        }
-    };
+    import Typewriter from 'svelte-typewriter';
 </script>
 
 <div class="container">
@@ -25,25 +7,33 @@
         About me
     </h1>
 </div>
-<div class="spacer"></div>
-<div class="hide" use:inview={options} on:inview_change={show}>
+<img src="..\src\img\IMG_5905.JPG" alt="Me!">
+<Typewriter keepCursorOnFinish={true} delay={500} mode={"cascade"} interval={80} showCursorOnDelay={true}>
     <p>
         I am a developer from Devon, England. I studied IT at Aberystwyth University, where 
         I developed a passion for programming. Since graduating, I have been working as a 
         Junior Developer at Hawksmoor, where I have been developing not just code - but my 
         skills as well.
     </p>
-</div>
-<div class="spacer"></div>
-<div class="hide" use:inview={options} on:inview_change={show}>
-    <p>
+    <p style="margin-top: 3%;">
         My skillset includes JS, PHP, and more! I have hand crafted this portfolio using 
         the JS framework Svelte. Please contact me if you have any queries or just want 
         to chat!
     </p>
-</div>
-<div class="spacer"></div>
+</Typewriter>
 <style>
+    img {
+        display: block;
+        object-fit: cover;
+        object-position: 23%;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5svh;
+        margin-top: 5svh;
+    }
     .container {
         margin: auto;
         width: 50%;
@@ -68,5 +58,15 @@
     h1:hover::after {
         transform: scaleX(1);
         transform-origin: bottom left;
+    }
+    @media screen and (max-width: 500px) {
+        img {
+            width: 75%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        img {
+            width: 65%;
+        }
     }
 </style>

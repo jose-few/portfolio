@@ -29,6 +29,8 @@
         margin: 0;
         padding: 0;
         overflow: overlay;
+        --cursor-color: aliceblue;
+        --cursor-width: 3px;
     }
     :global(html) {
         margin: 0;
