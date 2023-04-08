@@ -51,8 +51,8 @@
     form {
         position: relative;
         margin: auto;
-        width: 50svw;
-        min-width: 40svw;
+        width: 35svw;
+        min-width: 35svw;
         height: 75svh;
         min-height: 70svh;
         background-color: #00203a;
