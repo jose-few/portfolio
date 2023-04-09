@@ -7,18 +7,24 @@
         Welcome
     </h1>
 </div>
-<Typewriter keepCursorOnFinish={true} delay={500} mode={"cascade"} interval={80} showCursorOnDelay={true}>
-    <p>
-        My name is Joe.
-    </p>
-    <p style="margin-top: 3%;">
-        This is my portfolio.
-    </p>
-    <p style="margin-top: 3%;">
-        I will probably put my projects here.
-    </p>
-</Typewriter>
+<div class="tw">
+    <Typewriter keepCursorOnFinish={true} delay={500} mode={"cascade"} interval={60} showCursorOnDelay={true}>
+        <p>
+            My name is Joe.
+        </p>
+        <p style="margin-top: 3%;">
+            This is my portfolio.
+        </p>
+        <p style="margin-top: 3%;">
+            I will probably put my projects here.
+        </p>
+    </Typewriter>
+</div>
 <style>
+    .tw {
+        height: 300px;
+        text-align: center;
+    }
     .container {
         margin: auto;
         width: 50%;
