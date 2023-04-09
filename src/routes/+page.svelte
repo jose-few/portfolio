@@ -8,7 +8,7 @@
     </h1>
 </div>
 <div class="tw">
-    <Typewriter keepCursorOnFinish={true} delay={500} mode={"cascade"} interval={60} showCursorOnDelay={true}>
+    <Typewriter keepCursorOnFinish={true} delay={500} mode={"cascade"} interval={35} showCursorOnDelay={true}>
         <p>
             My name is Joe.
         </p>
