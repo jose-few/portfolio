@@ -1,5 +1,6 @@
 <script lang="ts">
     import Typewriter from 'svelte-typewriter';
+    import Work from './work/work.svelte';
 </script>
 
 <div class="container">
@@ -8,18 +9,19 @@
     </h1>
 </div>
 <div class="tw">
-    <Typewriter keepCursorOnFinish={true} delay={500} mode={"cascade"} interval={35} showCursorOnDelay={true}>
+    <Typewriter keepCursorOnFinish={false} delay={500} mode={"cascade"} interval={30} showCursorOnDelay={true}>
         <p>
             My name is Joe.
         </p>
         <p style="margin-top: 3%;">
-            This is my portfolio.
+            I'm a developer from Devon, England.
         </p>
         <p style="margin-top: 3%;">
-            I will probably put my projects here.
+            This is my website.
         </p>
     </Typewriter>
 </div>
+<Work/>
 <style>
     .tw {
         height: 300px;

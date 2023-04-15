@@ -1,5 +1,20 @@
 <script lang="ts">
     import Typewriter from 'svelte-typewriter';
+    import { inview } from 'svelte-inview';
+    import type { ObserverEventDetails, Options } from 'svelte-inview';
+    const options: Options = {
+        root: null,
+        rootMargin: '-50px',
+        unobserveOnEnter: false,
+    };
+    const show = ({detail}: CustomEvent<ObserverEventDetails>) => {
+        let isInView: boolean;
+        (isInView = detail.inView);
+        //console.log(detail.node);
+        if (isInView) {
+            detail.node.classList.add('show');
+        }
+    };
 </script>
 
 <div class="container">
@@ -7,16 +22,16 @@
         About me
     </h1>
 </div>
-<img src="/IMG_5905.JPG" alt="Me!">
+<img class="hide" use:inview={options} on:inview_change={show} src="/IMG_5905.JPG" alt="Me!">
 <div class="tw">
-    <Typewriter keepCursorOnFinish={false} delay={500} mode={"cascade"} interval={35} showCursorOnDelay={true}>
+    <Typewriter keepCursorOnFinish={false} delay={500} mode={"cascade"} interval={30} showCursorOnDelay={true}>
         <p>
-            I'm a developer from Devon, England. I studied IT at Aberystwyth University, where I developed a passion for programming. Since graduating, I have been working as a Junior Developer at Hawksmoor, where I've been developing not just code - but my skills as well. I'm driven and hard working, and always eager to improve!
+            Hi there! I studied IT at Aberystwyth University, where I developed a passion for programming. Since graduating, I have been working as a Junior Developer at Hawksmoor, where I've been developing not just code - but my skills as well. I'm driven and hard working, and always eager to improve!
         </p>
     </Typewriter>
-    <Typewriter keepCursorOnFinish={true} delay={20500} mode={"cascade"} interval={35} showCursorOnDelay={false}>
+    <Typewriter keepCursorOnFinish={true} delay={12000} mode={"cascade"} interval={30} showCursorOnDelay={false}>
         <p style="margin-top: 3%;">
-            My skillset includes JS, PHP, and more! I have hand crafted this portfolio using the JS framework Svelte. Please contact me if you have any queries or just want to chat!
+            My skillset includes JS, PHP, and more! I have hand crafted this portfolio using the JS framework Svelte. Please contact me if you have any queries, or just want to chat!
         </p>
     </Typewriter>
 </div>
