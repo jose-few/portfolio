@@ -8,12 +8,12 @@
 
     function goBack() {
         cara1.goToPrev()
-        cara2.goToPrev()
+        cara2.goToPrev({animated: false})
     }
 
     function goNext() {
         cara1.goToNext()
-        cara2.goToNext()
+        cara2.goToNext({animated: false})
     }
 </script>
 
@@ -29,12 +29,12 @@
                 <Carousel arrows={false} swiping={false} dots={false} bind:this={cara1}>
                     <div>
                         <p>
-                            Hawksmoor
+                            Aberystwyth University
                         </p>
                     </div>
                     <div>
                         <p>
-                            Hawksmoor Test
+                            Hawksmoor IM
                         </p>
                     </div>
                 </Carousel>
@@ -45,14 +45,20 @@
         <div class="second-carousel">
             {#if browser}
                 <Carousel dots={false} swiping={false} arrows={false} bind:this={cara2}>
-                    <div>
+                    <div class="cara-text">
+                        <p>
+                            2017 - 2021
+                        </p>
+                        <p>
+                            I studied a BSc in I.T. at Aber Uni, where I quickly found a passion for development and problem solving.
+                        </p>
+                    </div>
+                    <div class="cara-text">
                         <p>
                             2021 - Present
                         </p>
-                    </div>
-                    <div>
                         <p>
-                            2021 - Present Test
+                            I started at Hawksmoor as a PHP Developer, and I've been learning valuable skills on real-world development and project work.
                         </p>
                     </div>
                 </Carousel>
@@ -78,6 +84,9 @@
             margin: auto;
         }
     }
+    .cara-text p {
+        padding: 10px;
+    }
     .carousel-container {
         padding-top: 20px;
         display: flex;
@@ -85,11 +94,11 @@
         justify-content: center;
     }
     .main-carousel {
-        width: 40%;
+        width: 30svw;
         margin: auto;
     }
     .second-carousel {
-        width: 40%;
+        width: 30svw;
         margin: auto;
     }
     .work-head {
