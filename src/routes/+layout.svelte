@@ -226,7 +226,6 @@
         }
         :global(p) {
             font-size: 1.25rem;
-            text-align: justify;
             width: 90%;
         }
         :global(.spacer) {
