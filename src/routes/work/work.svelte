@@ -80,6 +80,9 @@
             width: 80%;
             margin: auto;
         }
+        .bg-cont {
+            border-width: 12px 0px;
+        }
     }
     .cara-text p {
         padding: 10px;
