@@ -69,11 +69,8 @@
 
 <style>
     @media screen and (max-width: 600px) {
-        .carousel-container {
-            padding-top: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        .carousel-container div {
+            display: block;
         }
         .main-carousel {
             width: 80%;
@@ -89,9 +86,9 @@
     }
     .carousel-container {
         padding-top: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    }
+    .carousel-container div {
+        display: inline;
     }
     .main-carousel {
         width: 30svw;
