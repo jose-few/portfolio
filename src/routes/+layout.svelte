@@ -46,7 +46,7 @@
         position: relative;
         min-height: 70vh;
         color: aliceblue;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-align: center;
         background-image: url("../svg/animate_1.svg");
         background-position: center;
@@ -59,12 +59,12 @@
         width: 100%;
         position: absolute;
         margin: 0;
-        bottom: 5px;
+        bottom: 15px;
     }
     :global(.footText) {
         width: 100%;
         position: relative;
-        margin: 5px;
+        margin: 10px;
     }
     :global(.links) {
         width: 100%;
