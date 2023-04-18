@@ -31,16 +31,10 @@
                         <p>
                             Aberystwyth University
                         </p>
-                        <p>
-                            2017 - 2021
-                        </p>
                     </div>
                     <div class="cara-text">
                         <p>
                             Hawksmoor IM
-                        </p>
-                        <p>
-                            2021 - Present
                         </p>
                     </div>
                 </Carousel>
@@ -55,10 +49,16 @@
                 <Carousel dots={false} swiping={false} arrows={false} bind:this={cara2}>
                     <div class="cara-text">
                         <p>
+                            2017 - 2021
+                        </p>
+                        <p>
                             I studied a BSc in I.T. at Aber Uni, where I quickly found a passion for development and problem solving.
                         </p>
                     </div>
                     <div class="cara-text">
+                        <p>
+                            2021 - Present
+                        </p>
                         <p>
                             I started at Hawksmoor as a PHP Developer, and I've been learning valuable skills on real-world development and project work.
                         </p>
