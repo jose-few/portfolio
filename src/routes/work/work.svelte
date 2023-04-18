@@ -95,7 +95,7 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-    .logo #aber {
+    #aber {
         background-image: url("../svg/Aberystwyth University.svg");
     }
     .btnCont {
