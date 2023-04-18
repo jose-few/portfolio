@@ -17,9 +17,13 @@
 <slot></slot>
 
 <div class="footer">
-    <p class="footText">This will be the footer. I will stick some links here.</p>
+    <p class="footText">Designed and built by me. <i class="fa-solid fa-copyright"></i> 2023.</p>
+    <p class="footText">My links:</p>
+    <div class="links">
+        <a href="https://github.com/jose-few"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/joseph-few-1a033b207/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
 </div>
-
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap');
     :global(body) {
