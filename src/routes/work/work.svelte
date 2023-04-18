@@ -28,7 +28,7 @@
             {#if browser}
                 <Carousel arrows={false} swiping={false} dots={false} bind:this={cara1}>
                     <div class="cara-text">
-                        <img src="../../svg/Aberyswyth University.svg" alt="Aber Uni Logo">
+                        <img src="../svg/Aberyswyth University.svg" alt="Aber Uni Logo">
                         <p>
                             Aberystwyth University
                         </p>
