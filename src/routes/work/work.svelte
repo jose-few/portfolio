@@ -84,7 +84,7 @@
             margin: auto;
         }
         .bg-cont {
-            border-width: 7px 0px;
+            width: 90%;
         }
     }
     .logo {
@@ -96,7 +96,7 @@
         background-repeat: no-repeat;
     }
     #aber {
-        background-image: url("../svg/Aberystwyth University.svg");
+        background-image: url("../../svg/Aberystwyth University.svg");
     }
     .btnCont {
         display: flex !important;
