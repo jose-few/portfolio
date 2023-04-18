@@ -17,11 +17,13 @@
 <slot></slot>
 
 <div class="footer">
-    <p class="footText">Designed and built by me. <i class="fa-solid fa-copyright"></i> 2023.</p>
-    <p class="footText">My links:</p>
-    <div class="links">
-        <a href="https://github.com/jose-few"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/joseph-few-1a033b207/"><i class="fa-brands fa-linkedin"></i></a>
+    <div class="footCont">
+        <p class="footText">Designed and built by me. <i class="fa-solid fa-copyright"></i> 2023.</p>
+        <p class="footText">My links:</p>
+        <div class="links">
+            <a href="https://github.com/jose-few"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/joseph-few-1a033b207/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </div>
 </div>
 <style>
@@ -52,12 +54,19 @@
         background-repeat: no-repeat;
         background-color: #001220;
     }
-    :global(.footText) {
+    :global(.footCont) {
         width: 100%;
         position: absolute;
         margin: 0;
         bottom: 5px;
-        text-align: center;
+    }
+    :global(.footText) {
+        width: 100%;
+        position: relative;
+    }
+    :global(.links) {
+        width: 100%;
+        position: relative;
     }
     :global(.spacer) {
         height: 150px;
