@@ -73,8 +73,7 @@
 <style>
     .logo {
         width: 50%;
-        aspect-ratio: 243.3 / 173.1;
-        display: block;
+        display: block !important;
         margin: auto;
         background-position: center;
         background-size: cover;
@@ -82,6 +81,7 @@
     }
     #aber {
         background-image: url("../../svg/Aberystwyth University.svg");
+        aspect-ratio: 243.3 / 173.1;
     }
     .btnCont {
         display: flex !important;
@@ -168,6 +168,9 @@
         }
         .btnCont {
             width: 70%;
+        }
+        .logo {
+            width: 80%;
         }
     }
 </style>
