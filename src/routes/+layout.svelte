@@ -63,10 +63,15 @@
     :global(.footText) {
         width: 100%;
         position: relative;
+        margin: 5px;
     }
     :global(.links) {
         width: 100%;
         position: relative;
+    }
+    :global(.links i) {
+        size: 1.25rem;
+        color: aliceblue;
     }
     :global(.spacer) {
         height: 150px;
