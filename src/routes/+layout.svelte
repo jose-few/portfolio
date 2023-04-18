@@ -53,6 +53,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-color: #001220;
+        overflow-x: hidden;
     }
     :global(.footCont) {
         width: 100%;

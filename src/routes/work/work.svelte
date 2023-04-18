@@ -44,8 +44,8 @@
                         </p>
                     </div>
                 </Carousel>
-                <button on:click={goBack}>Prev</button>
-                <button on:click={goNext}>Next</button>
+                <button id="prvBtn" on:click={goBack}><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="nxtBtn" on:click={goNext}><i class="fa-solid fa-arrow-right"></i></button>
             {/if}
         </div>
         <div class="second-carousel">
@@ -83,6 +83,16 @@
         .bg-cont {
             border-width: 12px 0px;
         }
+    }
+    button {
+        width: 20%;
+        padding: 10px;
+        margin: auto;
+        background-color: transparent;
+        border: 2px solid aliceblue;
+    }
+    button i {
+        color: aliceblue;
     }
     .cara-text p {
         padding: 10px;
