@@ -18,7 +18,7 @@
 
 <div class="footer">
     <div class="footCont">
-        <p class="footText">Designed and built by me. <i class="fa-solid fa-copyright"></i> 2023.</p>
+        <p class="footText">Designed and built by me. <i class="fa-regular fa-copyright"></i> 2023.</p>
         <p class="footText">My links:</p>
         <div class="links">
             <a href="https://github.com/jose-few"><i class="fa-brands fa-github"></i></a>

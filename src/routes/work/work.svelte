@@ -29,14 +29,9 @@
                 <Carousel arrows={false} swiping={false} dots={false} bind:this={cara1}>
                     <div class="cara-text">
                         <div class="logo" id="aber"></div>
-                        <p>
-                            Aberystwyth University
-                        </p>
                     </div>
                     <div class="cara-text">
-                        <p>
-                            Hawksmoor IM
-                        </p>
+                        
                     </div>
                 </Carousel>
                 <div class="btnCont">
@@ -50,6 +45,9 @@
                 <Carousel dots={false} swiping={false} arrows={false} bind:this={cara2}>
                     <div class="cara-text">
                         <p>
+                            Aberystwyth University
+                        </p>
+                        <p>
                             2017 - 2021
                         </p>
                         <p>
@@ -57,6 +55,9 @@
                         </p>
                     </div>
                     <div class="cara-text">
+                        <p>
+                            Hawksmoor IM
+                        </p>
                         <p>
                             2021 - Present
                         </p>
@@ -72,7 +73,7 @@
 
 <style>
     .logo {
-        width: 50%;
+        width: 30%;
         display: block !important;
         margin: auto;
         background-position: center;
@@ -81,7 +82,7 @@
     }
     #aber {
         background-image: url("../../svg/Aberystwyth University.svg");
-        aspect-ratio: 243.3 / 173.1;
+        height: 15svh;
     }
     .btnCont {
         display: flex !important;
@@ -152,6 +153,9 @@
         );
     }
     @media screen and (max-width: 600px) {
+        .carousel-container {
+            padding-top: 0px;
+        }
         .carousel-container div {
             display: block;
         }
@@ -167,10 +171,21 @@
             border-width: 7px 0px;
         }
         .btnCont {
+            padding-top: 5svh;
+            padding-bottom: 1svh;
             width: 70%;
         }
         .logo {
             width: 80%;
+        }
+        #aber {
+            height: 10svh;
+        }
+        .work-head {
+            font-size: 1.25rem;
+        }
+        .cara-text {
+            font-size: 1.1rem;
         }
     }
 </style>
