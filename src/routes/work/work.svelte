@@ -28,7 +28,7 @@
             {#if browser}
                 <Carousel arrows={false} swiping={false} dots={false} bind:this={cara1}>
                     <div class="cara-text">
-                        <img src="../svg/Aberyswyth University.svg" alt="Aber Uni Logo">
+                        <div class="logo" id="aber"></div>
                         <p>
                             Aberystwyth University
                         </p>
@@ -86,6 +86,17 @@
         .bg-cont {
             border-width: 7px 0px;
         }
+    }
+    .logo {
+        size: 50%;
+        display: block;
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .logo #aber {
+        background-image: url("../svg/Aberystwyth University.svg");
     }
     .btnCont {
         display: flex !important;
