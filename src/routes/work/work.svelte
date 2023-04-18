@@ -28,6 +28,7 @@
             {#if browser}
                 <Carousel arrows={false} swiping={false} dots={false} bind:this={cara1}>
                     <div class="cara-text">
+                        <img src="../../svg/Aberyswyth University.svg" alt="Aber Uni Logo">
                         <p>
                             Aberystwyth University
                         </p>
@@ -87,25 +88,26 @@
         }
     }
     .btnCont {
-        display: inline;
+        display: flex !important;
         width: 15%;
         margin: auto;
     }
     button {
-        width: 5%;
-        padding: 10px;
+        width: 45%;
+        padding: 10px 0px;
         margin: auto;
         background-color: transparent;
         border: 2px solid aliceblue;
-        transition: all 1s ease-in-out;
+        transition: all 0.35s ease-in-out;
     }
     button:hover {
         background-color: aliceblue;
     }
     button i {
         color: aliceblue;
+        transition: all 0.35s ease-in-out;
     }
-    button i:hover {
+    button:hover i{
         color: #001220;
     }
     .cara-text p {
