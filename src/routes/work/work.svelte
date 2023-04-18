@@ -71,24 +71,9 @@
 </div>
 
 <style>
-    @media screen and (max-width: 600px) {
-        .carousel-container div {
-            display: block;
-        }
-        .main-carousel {
-            width: 80%;
-            margin: auto;
-        }
-        .second-carousel {
-            width: 80%;
-            margin: auto;
-        }
-        .bg-cont {
-            width: 90%;
-        }
-    }
     .logo {
-        size: 50%;
+        width: 50%;
+        aspect-ratio: 243.3 / 173.1;
         display: block;
         margin: auto;
         background-position: center;
@@ -165,5 +150,24 @@
         hsl(45deg 100% 50%) 89%,
         hsl(55deg 100% 50%) 100%
         );
+    }
+    @media screen and (max-width: 600px) {
+        .carousel-container div {
+            display: block;
+        }
+        .main-carousel {
+            width: 80%;
+            margin: auto;
+        }
+        .second-carousel {
+            width: 80%;
+            margin: auto;
+        }
+        .bg-cont {
+            border-width: 7px 0px;
+        }
+        .btnCont {
+            width: 70%;
+        }
     }
 </style>
