@@ -1,7 +1,12 @@
+<script>
+    import Typewriter from 'svelte-typewriter';
+</script>
 <div class="container">
-    <h1>
-        Get in touch.
-    </h1>
+    <Typewriter keepCursorOnFinish={false} delay={500} mode={"cascade"} interval={30} showCursorOnDelay={true}>
+        <h1>
+            Get in touch
+        </h1>
+    </Typewriter>
 </div>
 
 <div class="spacer"></div>

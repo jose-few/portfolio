@@ -4,22 +4,22 @@
 </script>
 
 <div class="container">
-    <h1>
-        Welcome
-    </h1>
+    <Typewriter keepCursorOnFinish={false} delay={500} mode={"cascade"} interval={30} showCursorOnDelay={true}>
+        <h1>
+            Welcome
+        </h1>
+    </Typewriter>
 </div>
 <div class="tw">
-    <Typewriter keepCursorOnFinish={false} delay={500} mode={"cascade"} interval={30} showCursorOnDelay={true}>
-        <p>
-            My name is Joe.
-        </p>
-        <p style="margin-top: 3%;">
-            I'm a developer from Devon, England.
-        </p>
-        <p style="margin-top: 3%;">
-            This is my website.
-        </p>
-    </Typewriter>
+    <p>
+        My name is Joe.
+    </p>
+    <p style="margin-top: 3%;">
+        I'm a developer from Devon, England.
+    </p>
+    <p style="margin-top: 3%;">
+        This is my website.
+    </p>
 </div>
 <Work/>
 <style>
