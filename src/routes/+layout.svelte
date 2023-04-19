@@ -20,7 +20,7 @@
     <div class="footCont">
         <p class="footText">Designed and built by me. <i class="fa-regular fa-copyright"></i> 2023.</p>
         <div class="linkCont">
-            <p class="footText">My links:</p>
+            <p class="footText" id="myLinks">My links:</p>
             <div class="links">
                 <a href="https://github.com/jose-few"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/joseph-few-1a033b207/"><i class="fa-brands fa-linkedin"></i></a>
@@ -60,23 +60,27 @@
     :global(.footCont) {
         width: 100%;
         position: absolute;
-        margin: 0;
+        margin: auto;
         bottom: 15px;
     }
     :global(.footText) {
-        width: 100%;
+        width: 50%;
         position: relative;
-        margin: 10px;
+        margin: auto;
     }
     :global(.links) {
-        width: 100%;
+        width: 10%;
         position: relative;
+        margin: 0;
     }
     :global(.linkCont) {
-        width: 100%;
+        width: 50%;
         display:flex;
         flex-direction: row;
         position: relative;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
     }
     :global(.links i) {
         size: 1.25rem;
@@ -151,6 +155,10 @@
         border-radius: 10px;
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
         background-color: #555;
+    }
+    #myLinks {
+        width: 10%;
+        margin: 0;
     }
     .navholder {
         height: 400px;
