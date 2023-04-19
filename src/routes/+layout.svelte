@@ -18,7 +18,7 @@
 
 <div class="footer">
     <div class="footCont">
-        <p class="footText">Designed and built using <img src="./1200px-Svelte_Logo.png" alt="Svelte."></p>
+        <p class="footText" id="svLogoCont">Designed and built using <img id="svLogo" src="./1200px-Svelte_Logo.png" alt="Svelte."></p>
         <p class="footText"><i class="fa-regular fa-copyright"></i> 2023.</p>
         <div class="linkCont">
             <p class="footText" id="myLinks">My links:</p>
@@ -156,6 +156,15 @@
         border-radius: 10px;
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
         background-color: #555;
+    }
+    #svLogoCont {
+        display: flex;
+        justify-content: center;
+    }
+    #svLogo {
+        width: 2%;
+        align-self: center;
+        margin-left: 5px;
     }
     #myLinks {
         width: 10%;
