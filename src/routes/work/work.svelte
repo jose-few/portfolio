@@ -72,6 +72,12 @@
 </div>
 
 <style>
+    img {
+        width: 45svw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .logo {
         width: 30%;
         display: block !important;
@@ -153,6 +159,9 @@
         );
     }
     @media screen and (max-width: 600px) {
+        img {
+            width: 70svw;
+        }
         .carousel-container {
             padding-top: 0px;
         }
