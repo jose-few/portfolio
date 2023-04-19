@@ -250,6 +250,9 @@
             flex-direction: column;
             width: 85%;
         }
+        .logoA {
+            width: 5%;
+        }
         .links {
             width: 100%;
         }
