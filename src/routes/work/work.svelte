@@ -73,13 +73,13 @@
 
 <style>
     img {
-        width: 45svw;
+        width: 25svw;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
     .logo {
-        width: 30%;
+        width: 66%;
         display: block !important;
         margin: auto;
         background-position: center;
@@ -175,6 +175,7 @@
         }
         .bg-cont {
             border-width: 7px 0px;
+            height: 100svh;
         }
         .btnCont {
             padding-top: 1svh;
