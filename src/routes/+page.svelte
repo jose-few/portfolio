@@ -4,7 +4,7 @@
 </script>
 
 <div class="container">
-    <Typewriter keepCursorOnFinish={false} delay={500} mode={"cascade"} interval={30} showCursorOnDelay={true}>
+    <Typewriter keepCursorOnFinish={false} delay={500} mode={"cascade"} interval={30} showCursorOnDelay={false}>
         <h1>
             Welcome
         </h1>
