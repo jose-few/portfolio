@@ -227,6 +227,10 @@
     @media screen and (max-width: 600px) {
         .linkCont {
             flex-direction: column;
+            width: 85%;
+        }
+        .links {
+            width: 100%;
         }
         .navbar {
             margin-top: 0;
@@ -246,6 +250,7 @@
         }
         .footText {
             font-size: 1.2rem;
+            width: 90% !important;
         }
         :global(.show) {
             opacity: 1 !important;
