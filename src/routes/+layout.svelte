@@ -18,7 +18,7 @@
 
 <div class="footer">
     <div class="footCont">
-        <p class="footText" id="svLogoCont">Designed and built using <a href="https://svelte.dev/"><img id="svLogo" src="./1200px-Svelte_Logo.png" alt="Svelte."></a></p>
+        <p class="footText" id="svLogoCont">Designed and built using <a class="logoA" href="https://svelte.dev/"><img id="svLogo" src="./1200px-Svelte_Logo.png" alt="Svelte."></a></p>
         <p class="footText"><i class="fa-regular fa-copyright"></i> 2023</p>
         <div class="linkCont">
             <p class="footText" id="myLinks">My links:</p>
@@ -44,6 +44,14 @@
     :global(html) {
         margin: 0;
         padding: 0;
+    }
+    .logoA {
+        width: 2%;
+        align-self: center;
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 5px;
     }
     :global(.footer) {
         position: relative;
@@ -167,9 +175,7 @@
         justify-content: center;
     }
     #svLogo {
-        width: 2%;
-        align-self: center;
-        margin-left: 5px;
+        width: 100%;
     }
     #myLinks {
         width: 10%;
@@ -240,9 +246,6 @@
         transform-origin: bottom left;
     }
     @media screen and (max-width: 600px) {
-        #svLogo {
-            width: 4%;
-        }
         .linkCont {
             flex-direction: column;
             width: 85%;
