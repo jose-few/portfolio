@@ -159,6 +159,8 @@
     }
     :global(.container) {
         height: 100px;
+        margin: auto;
+        margin-bottom: 7svh;
     }
     #svLogoCont {
         display: flex;
