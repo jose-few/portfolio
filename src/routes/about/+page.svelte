@@ -29,7 +29,7 @@
             Hi there! I studied IT at Aberystwyth University, where I developed a passion for programming. Since graduating, I have been working as a Junior Developer at Hawksmoor, where I've been developing not just code - but my skills as well. I'm driven and hard working, and always eager to improve!
         </p>
     </Typewriter>
-    <Typewriter keepCursorOnFinish={true} delay={12000} mode={"cascade"} interval={30} showCursorOnDelay={false}>
+    <Typewriter keepCursorOnFinish={true} delay={10500} mode={"cascade"} interval={30} showCursorOnDelay={false}>
         <p style="margin-top: 3%;">
             My skillset includes JS, PHP, and more! I have hand crafted this portfolio using the JS framework Svelte. Please contact me if you have any queries, or just want to chat!
         </p>
@@ -42,7 +42,7 @@
     img {
         display: block;
         object-fit: cover;
-        object-position: 23%;
+        object-position: 7%;
         border-radius: 50%;
         aspect-ratio: 1 / 1;
         width: 30%;

@@ -19,10 +19,12 @@
 <div class="footer">
     <div class="footCont">
         <p class="footText">Designed and built by me. <i class="fa-regular fa-copyright"></i> 2023.</p>
-        <p class="footText">My links:</p>
-        <div class="links">
-            <a href="https://github.com/jose-few"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/joseph-few-1a033b207/"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="linkCont">
+            <p class="footText">My links:</p>
+            <div class="links">
+                <a href="https://github.com/jose-few"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/joseph-few-1a033b207/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
     </div>
 </div>
@@ -68,6 +70,12 @@
     }
     :global(.links) {
         width: 100%;
+        position: relative;
+    }
+    :global(.linkCont) {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
         position: relative;
     }
     :global(.links i) {
@@ -209,6 +217,9 @@
         transform-origin: bottom left;
     }
     @media screen and (max-width: 600px) {
+        .linkCont {
+            flex-direction: column;
+        }
         .navbar {
             margin-top: 0;
         }

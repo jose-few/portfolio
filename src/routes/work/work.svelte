@@ -1,5 +1,4 @@
 <script>
-    import Typewriter from 'svelte-typewriter';
     import Carousel from 'svelte-carousel';
     import { browser } from '$app/environment';
 
@@ -19,9 +18,7 @@
 
 <div class="bg-cont">
     <div class="text-cont">
-        <Typewriter delay={4000} interval={50}>
-            <p class="work-head">Check out what I've been up to:</p>
-        </Typewriter>
+        <p class="work-head">Check out what I've been up to:</p>
     </div>
     <div class="carousel-container">
         <div class="main-carousel">
