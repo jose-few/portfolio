@@ -18,7 +18,8 @@
 
 <div class="footer">
     <div class="footCont">
-        <p class="footText">Designed and built by me. <i class="fa-regular fa-copyright"></i> 2023.</p>
+        <p class="footText">Designed and built using <img src="./1200px-Svelte_Logo.png" alt="Svelte."></p>
+        <p class="footText"><i class="fa-regular fa-copyright"></i> 2023.</p>
         <div class="linkCont">
             <p class="footText" id="myLinks">My links:</p>
             <div class="links">
