@@ -92,11 +92,18 @@
     }
     .btnCont {
         display: flex !important;
-        width: 15%;
+        width: 50%;
         margin: auto;
+        margin-top: 20px;
+    }
+    #prvBtn {
+        margin-right: 5px;
+    }
+    #nxtBtn {
+        margin-left: 5px;
     }
     button {
-        width: 45%;
+        width: 30%;
         padding: 10px 0px;
         margin: auto;
         background-color: transparent;
@@ -118,16 +125,12 @@
     }
     .carousel-container {
         padding-top: 20px;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
     }
-    .carousel-container div {
-        display: inline;
-    }
-    .main-carousel {
-        width: 30svw;
-        margin: auto;
-    }
-    .second-carousel {
-        width: 30svw;
+    .main-carousel, .second-carousel {
+        width: 50%;
         margin: auto;
     }
     .work-head {
@@ -164,31 +167,22 @@
         }
         .carousel-container {
             padding-top: 0px;
+            flex-direction: column;
         }
-        .carousel-container div {
-            display: block;
-        }
-        .main-carousel {
-            width: 80%;
-            margin: auto;
-        }
-        .second-carousel {
-            width: 80%;
+        .main-carousel, .second-carousel {
+            width: 90%;
             margin: auto;
         }
         .bg-cont {
             border-width: 7px 0px;
         }
         .btnCont {
-            padding-top: 5svh;
+            padding-top: 1svh;
             padding-bottom: 1svh;
             width: 70%;
         }
         .logo {
-            width: 80%;
-        }
-        #aber {
-            height: 10svh;
+            width: 100%;
         }
         .work-head {
             font-size: 1.25rem;
