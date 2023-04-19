@@ -31,7 +31,7 @@
                         <div class="logo" id="aber"></div>
                     </div>
                     <div class="cara-text">
-                        <div class="logo" id="hawksmoor"></div>
+                        <img src="../../img/hawksmoor-logo.png" alt="Hawksmoor Logo">
                     </div>
                 </Carousel>
                 <div class="btnCont">
@@ -82,10 +82,6 @@
     }
     #aber {
         background-image: url("../../svg/Aberystwyth University.svg");
-        height: 15svh;
-    }
-    #hawksmoor {
-        background-image: url("../../img/hawksmoor-logo.png");
         height: 15svh;
     }
     .btnCont {
@@ -183,9 +179,6 @@
             width: 80%;
         }
         #aber {
-            height: 10svh;
-        }
-        #hawksmoor {
             height: 10svh;
         }
         .work-head {
