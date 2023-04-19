@@ -22,7 +22,7 @@
         About me
     </h1>
 </div>
-<img class="hide" use:inview={options} on:inview_change={show} src="/IMG_5905.JPG" alt="Me!">
+<img class="hide" use:inview={options} on:inview_change={show} src="/self-photo.png" alt="Me!">
 <div class="tw">
     <Typewriter keepCursorOnFinish={false} delay={500} mode={"cascade"} interval={30} showCursorOnDelay={true}>
         <p>
