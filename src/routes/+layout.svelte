@@ -235,6 +235,9 @@
         transform-origin: bottom left;
     }
     @media screen and (max-width: 600px) {
+        #svLogo {
+            width: 4%;
+        }
         .linkCont {
             flex-direction: column;
             width: 85%;
