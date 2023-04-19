@@ -18,7 +18,7 @@
 
 <div class="footer">
     <div class="footCont">
-        <p class="footText" id="svLogoCont">Designed and built using <img id="svLogo" src="./1200px-Svelte_Logo.png" alt="Svelte."></p>
+        <p class="footText" id="svLogoCont">Designed and built using <a href="https://svelte.dev/"><img id="svLogo" src="./1200px-Svelte_Logo.png" alt="Svelte."></a></p>
         <p class="footText"><i class="fa-regular fa-copyright"></i> 2023</p>
         <div class="linkCont">
             <p class="footText" id="myLinks">My links:</p>
