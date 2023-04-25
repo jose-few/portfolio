@@ -28,7 +28,7 @@
                         <div class="logo" id="aber"></div>
                     </div>
                     <div class="cara-text">
-                        <img src="/hawksmoor-logo.png" alt="Hawksmoor Logo">
+                        <img src="/hawksmoor-logo-white.png" alt="Hawksmoor Logo">
                     </div>
                 </Carousel>
                 <div class="btnCont">
