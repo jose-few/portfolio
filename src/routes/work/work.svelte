@@ -17,18 +17,18 @@
 </script>
 
 <div class="bg-cont">
-    <div class="text-cont">
+    <div>
         <p class="work-head">Check out what I've been up to:</p>
     </div>
     <div class="carousel-container">
         <div class="main-carousel">
             {#if browser}
                 <Carousel arrows={false} swiping={false} dots={false} bind:this={cara1}>
-                    <div class="cara-text">
-                        <div class="logo" id="aber"></div>
+                    <div>
+                        <img id="aber" src="/Aber Uni logo 150th edition - MONO WHITE.png" alt="Aberystwyth Uni Logo White">
                     </div>
-                    <div class="cara-text">
-                        <img src="/hawksmoor-logo-white.png" alt="Hawksmoor Logo">
+                    <div>
+                        <img id="hawk" src="/hawksmoor-logo-white.png" alt="Hawksmoor Logo">
                     </div>
                 </Carousel>
                 <div class="btnCont">
@@ -40,25 +40,28 @@
         <div class="second-carousel">
             {#if browser}
                 <Carousel dots={false} swiping={false} arrows={false} bind:this={cara2}>
-                    <div class="cara-text">
-                        <p>
+                    <div>
+                        <p class="cara-head">
                             Aberystwyth University
                         </p>
-                        <p>
+                        <p class="cara-text">
                             2017 - 2021
                         </p>
-                        <p>
-                            I studied a BSc in I.T. at Aber Uni, where I quickly found a passion for development and problem solving.
+                        <p class="cara-text">
+                            I studied BSc I.T. at Aberystwyth University, where I discovered my love for development and problem solving.
+                        </p>
+                        <p class="cara-text">
+                            The skills I learnt here have become invaluable to me, and are the foundation of my current abilities.
                         </p>
                     </div>
-                    <div class="cara-text">
-                        <p>
+                    <div>
+                        <p class="cara-head">
                             Hawksmoor IM
                         </p>
-                        <p>
+                        <p class="cara-text">
                             2021 - Present
                         </p>
-                        <p>
+                        <p class="cara-text">
                             I started at Hawksmoor as a PHP Developer, and I've been learning valuable skills on real-world development and project work.
                         </p>
                     </div>
@@ -69,23 +72,27 @@
 </div>
 
 <style>
-    img {
+    #aber {
+        padding-top: 10svh;
+        width: 35svw;
+    }
+    #hawk {
         width: 25svw;
+    }
+    .cara-head {
+        font-size: 1.75rem;
+        padding-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .cara-text {
+        font-size: 1.4rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-    }
-    .logo {
-        width: 66%;
-        display: block !important;
-        margin: auto;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    #aber {
-        background-image: url("../../svg/Aberystwyth University.svg");
-        height: 15svh;
     }
     .btnCont {
         display: flex !important;
@@ -100,12 +107,13 @@
         margin-left: 5px;
     }
     button {
-        width: 30%;
+        width: 15%;
         padding: 10px 0px;
         margin: auto;
         background-color: transparent;
         border: 2px solid aliceblue;
         transition: all 0.35s ease-in-out;
+        border-radius: 25px;
     }
     button:hover {
         background-color: aliceblue;
@@ -116,9 +124,6 @@
     }
     button:hover i{
         color: #001220;
-    }
-    .cara-text p {
-        padding: 10px;
     }
     .carousel-container {
         padding-top: 20px;
@@ -131,10 +136,9 @@
         margin: auto;
     }
     .work-head {
-        font-size: 1.8rem;
-    }
-    .text-cont {
-        margin: 20px;
+        margin-top: 5svh;
+        font-size: 2rem;
+        font-weight: 700;
         min-height: 40px;
     }
     .bg-cont {
@@ -142,7 +146,7 @@
         width: 100%;
         height: 60svh;
         border-color: aliceblue;
-        border-width: 17px 0px;
+        border-width: 12px 0px;
         border-style: solid;
         background-image: linear-gradient(
         135deg,
@@ -160,7 +164,7 @@
     }
     @media screen and (max-width: 600px) {
         img {
-            width: 70svw;
+            width: 70svw !important;
         }
         .carousel-container {
             padding-top: 0px;
@@ -178,9 +182,6 @@
             padding-top: 1svh;
             padding-bottom: 1svh;
             width: 70%;
-        }
-        .logo {
-            width: 100%;
         }
         .work-head {
             font-size: 1.25rem;

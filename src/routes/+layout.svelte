@@ -12,8 +12,6 @@
     </ul>
 </nav>
 
-<link href='https://fonts.googleapis.com/css?family=Averia Sans Libre' rel='stylesheet'>
-
 <slot></slot>
 
 <div class="footer">
@@ -30,10 +28,10 @@
     </div>
 </div>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
     :global(body) {
         background-color: #001220;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Merriweather', serif;
         font-weight: 400;
         margin: 0;
         padding: 0;
