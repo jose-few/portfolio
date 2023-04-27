@@ -43,6 +43,10 @@
         margin: 0;
         padding: 0;
     }
+    .links a:hover i {
+        color: #d7ecff;
+        transition: all 1s ease-in-out;
+    }
     .logoA {
         width: 2%;
         align-self: center;
@@ -178,6 +182,7 @@
     #myLinks {
         width: 10%;
         margin: 0;
+        font-size: 1.3rem;
     }
     .navholder {
         height: 400px;
@@ -247,6 +252,9 @@
         .linkCont {
             flex-direction: column;
             width: 85%;
+        }
+        #myLinks {
+            visibility: hidden;
         }
         .logoA {
             width: 5%;

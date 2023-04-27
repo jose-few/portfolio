@@ -64,6 +64,9 @@
                         <p class="cara-text">
                             I started at Hawksmoor as a PHP Developer, and I've been learning valuable skills on real-world development and project work.
                         </p>
+                        <p class="cara-text">
+                            I've worked closely with a variety of languages such as PHP, JS, MySQL, and VB. I've also used selection of softwares such as BitBucket and Dreamweaver.
+                        </p>
                     </div>
                 </Carousel>
             {/if}
