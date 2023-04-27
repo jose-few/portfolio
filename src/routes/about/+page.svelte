@@ -34,9 +34,6 @@
     </p>
 </div>
 <style>
-    .tw {
-        height: 300px;
-    }
     img {
         display: block;
         object-fit: cover;
@@ -74,50 +71,15 @@
         transform: scaleX(1);
         transform-origin: bottom left;
     }
-    @media screen and (max-width: 1350px) {
-        .tw {
-            height: 400px;
-        }
-    }
-    @media screen and (max-width: 1200px) {
-        .tw {
-            height: 600px;
-        }
-    }
-    @media screen and (max-width: 800px) {
-        .tw {
-            height: 600px;
-        }
-    }
-    @media screen and (max-width: 700px) {
-        .tw {
-            height: 600px;
-        }
-    }
     @media screen and (max-width: 600px) {
         img {
             width: 65%;
-        }
-        .tw {
-            height: 500px;
         }
     }
     @media screen and (max-width: 500px) {
         img {
             width: 75%;
         }
-        .tw {
-            height: 400px;
-        }
-    }
-    @media screen and (max-width: 400px) {
-        .tw {
-            height: 400px;
-        }
-    }
-    @media screen and (max-width: 360px) {
-        .tw {
-            height: 500px;
-        }
+        
     }
 </style>
