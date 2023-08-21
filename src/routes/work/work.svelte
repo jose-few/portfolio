@@ -4,15 +4,16 @@
 
     let cara1;
     let cara2;
+    let pageNo;
 
     function goBack() {
         cara1.goToPrev()
-        cara2.goToPrev({animated: false})
+        cara2.goTo(pageNo, {animated: false})
     }
 
     function goNext() {
         cara1.goToNext()
-        cara2.goToNext({animated: false})
+        cara2.goTo(pageNo, {animated: false})
     }
 </script>
 
@@ -29,7 +30,7 @@
                     dots={false} 
                     bind:this={cara1}
                     on:pageChange={
-                        event => console.log(`Current page index: ${event.detail}`)
+                        event => pageNo = event.detail
                     }
                 >
                     <div>
