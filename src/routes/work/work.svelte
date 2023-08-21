@@ -4,7 +4,6 @@
 
     let cara1;
     let cara2;
-    let pageNo;
     let backbtn;
     let fwdbtn;
 
