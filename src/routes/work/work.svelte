@@ -13,12 +13,12 @@
         fwdbtn.setAttribute('disabled', true);
 
         cara1.goToPrev()
-        cara2.goTo(pageNo, {animated: false})
+        cara2.goToPrev()
 
         setTimeout(function(){
             backbtn.removeAttribute('disabled');
             fwdbtn.removeAttribute('disabled');
-        }, 2000)
+        }, 1100)
     }
 
     function goNext() {
@@ -26,12 +26,12 @@
         fwdbtn.setAttribute('disabled', true);
 
         cara1.goToNext()
-        cara2.goTo(pageNo, {animated: false})
+        cara2.goToNext()
 
         setTimeout(function(){
             backbtn.removeAttribute('disabled');
             fwdbtn.removeAttribute('disabled');
-        }, 2000)
+        }, 1100)
     }
 </script>
 
@@ -47,9 +47,6 @@
                     swiping={false} 
                     dots={false} 
                     bind:this={cara1}
-                    on:pageChange={
-                        event => pageNo = event.detail
-                    }
                 >
                     <div>
                         <img id="aber" src="/Aber Uni logo 150th edition - MONO WHITE.png" alt="Aberystwyth Uni Logo White">
@@ -66,7 +63,12 @@
         </div>
         <div class="second-carousel">
             {#if browser}
-                <Carousel dots={false} swiping={false} arrows={false} bind:this={cara2}>
+                <Carousel 
+                    dots={false} 
+                    swiping={false} 
+                    arrows={false} 
+                    bind:this={cara2}
+                >
                     <div>
                         <p class="cara-head">
                             Aberystwyth University
