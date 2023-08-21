@@ -13,7 +13,7 @@
         fwdbtn.setAttribute('disabled', true);
 
         cara1.goToPrev()
-        cara2.goToPrev()
+        cara2.goToPrev({animated: false})
 
         setTimeout(function(){
             backbtn.removeAttribute('disabled');
@@ -26,7 +26,7 @@
         fwdbtn.setAttribute('disabled', true);
 
         cara1.goToNext()
-        cara2.goToNext()
+        cara2.goToNext({animated: false})
 
         setTimeout(function(){
             backbtn.removeAttribute('disabled');
