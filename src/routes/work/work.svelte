@@ -7,12 +7,12 @@
 
     function goBack() {
         cara1.goToPrev()
-        cara2.goTo(cara1.currentPageIndex, {animated: false})
+        cara2.goToPrev({animated: false})
     }
 
     function goNext() {
         cara1.goToNext()
-        cara2.goTo(cara1.currentPageIndex, {animated: false})
+        cara2.goToNext({animated: false})
     }
 </script>
 
@@ -23,7 +23,15 @@
     <div class="carousel-container">
         <div class="main-carousel">
             {#if browser}
-                <Carousel arrows={false} swiping={false} dots={false} bind:this={cara1} let:currentPageIndex>
+                <Carousel 
+                    arrows={false} 
+                    swiping={false} 
+                    dots={false} 
+                    bind:this={cara1}
+                    on:pageChange={
+                        event => console.log(`Current page index: ${event.detail}`)
+                    }
+                >
                     <div>
                         <img id="aber" src="/Aber Uni logo 150th edition - MONO WHITE.png" alt="Aberystwyth Uni Logo White">
                     </div>
