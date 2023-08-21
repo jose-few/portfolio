@@ -5,15 +5,33 @@
     let cara1;
     let cara2;
     let pageNo;
+    let backbtn;
+    let fwdbtn;
 
     function goBack() {
+        backbtn.setAttribute('disabled', true);
+        fwdbtn.setAttribute('disabled', true);
+
         cara1.goToPrev()
         cara2.goTo(pageNo, {animated: false})
+
+        setTimeout(function(){
+            backbtn.removeAttribute('disabled');
+            fwdbtn.removeAttribute('disabled');
+        }, 2000)
     }
 
     function goNext() {
+        backbtn.setAttribute('disabled', true);
+        fwdbtn.setAttribute('disabled', true);
+
         cara1.goToNext()
         cara2.goTo(pageNo, {animated: false})
+
+        setTimeout(function(){
+            backbtn.removeAttribute('disabled');
+            fwdbtn.removeAttribute('disabled');
+        }, 2000)
     }
 </script>
 
@@ -41,8 +59,8 @@
                     </div>
                 </Carousel>
                 <div class="btnCont">
-                    <button id="prvBtn" on:click={goBack}><i class="fa-solid fa-arrow-left"></i></button>
-                    <button id="nxtBtn" on:click={goNext}><i class="fa-solid fa-arrow-right"></i></button>
+                    <button id="prvBtn" on:click={goBack} bind:this={backbtn}><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="nxtBtn" on:click={goNext} bind:this={fwdbtn}><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             {/if}
         </div>
