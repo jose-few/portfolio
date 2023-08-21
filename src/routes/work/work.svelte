@@ -23,7 +23,7 @@
     <div class="carousel-container">
         <div class="main-carousel">
             {#if browser}
-                <Carousel arrows={false} swiping={false} dots={false} bind:this={cara1}>
+                <Carousel arrows={false} swiping={false} dots={false} bind:this={cara1} let:currentPageIndex>
                     <div>
                         <img id="aber" src="/Aber Uni logo 150th edition - MONO WHITE.png" alt="Aberystwyth Uni Logo White">
                     </div>
